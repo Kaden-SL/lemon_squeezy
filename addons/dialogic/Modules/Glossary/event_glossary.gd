@@ -22,6 +22,7 @@ func _init() -> void:
 	set_default_color('Color6')
 	event_category = "Other"
 	event_sorting_index = 0
+	expand_by_default = false
 
 
 ################################################################################

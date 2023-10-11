@@ -14,7 +14,6 @@ func _execute() -> void:
 	if hide_textbox: 
 		dialogic.Text.hide_text_boxes()
 	dialogic.current_state = Dialogic.States.IDLE
-	await dialogic.Text.input_handler.dialogic_action
 	finish()
 
 ################################################################################
@@ -26,6 +25,8 @@ func _init() -> void:
 	set_default_color('Color5')
 	event_category = "Flow"
 	event_sorting_index = 12
+	expand_by_default = false
+	continue_at_end = false
 
 
 ################################################################################
@@ -44,4 +45,4 @@ func get_shortcode_parameters() -> Dictionary:
 
 func build_event_editor():
 	add_header_label('Wait for input')
-	add_body_edit('hide_textbox', ValueType.BOOL, {'left_text':'Hide text box:'})
+	add_body_edit('hide_textbox', ValueType.BOOL, 'Hide text box:')

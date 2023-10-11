@@ -26,6 +26,7 @@ func _init() -> void:
 	set_default_color('Color4')
 	event_category = "Flow"
 	event_sorting_index = 5
+	expand_by_default = false
 
 
 func _get_icon() -> Resource:

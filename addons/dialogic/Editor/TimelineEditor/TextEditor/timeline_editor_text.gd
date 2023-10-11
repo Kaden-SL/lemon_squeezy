@@ -4,13 +4,13 @@ extends CodeEdit
 ## Sub-Editor that allows editing timelines in a text format.
 
 @onready var timeline_editor := get_parent().get_parent()
-@onready var code_completion_helper :Node= find_parent('EditorsManager').get_node('CodeCompletionHelper') 
 
 var label_regex := RegEx.create_from_string('label +(?<name>[^\n]+)')
 
 func _ready():
+	syntax_highlighter = load("res://addons/dialogic/Editor/TimelineEditor/TextEditor/syntax_highlighter.gd").new()
+	
 	await find_parent('EditorView').ready
-	syntax_highlighter = code_completion_helper.syntax_highlighter
 	timeline_editor.editors_manager.sidebar.content_item_activated.connect(_on_content_item_clicked)
 
 func _on_text_editor_text_changed():
@@ -173,6 +173,7 @@ func _drop_data(at_position:Vector2, data:Variant) -> void:
 		insert_text_at_caret('"'+data.files[0]+'"')
 
 
+
 func _on_update_timer_timeout():
 	update_content_list()
 
@@ -205,19 +206,19 @@ func _on_content_item_clicked(label:String) -> void:
 
 # Called if something was typed
 func _request_code_completion(force:bool):
-	code_completion_helper.request_code_completion(force, self)
+	$CodeCompletionHelper.request_code_completion(force, self)
 
 
 # Filters the list of all possible options, depending on what was typed
 # Purpose of the different Kinds is explained in [_request_code_completion]
 func _filter_code_completion_candidates(candidates:Array) -> Array:
-	return code_completion_helper.filter_code_completion_candidates(candidates, self)
+	return $CodeCompletionHelper.filter_code_completion_candidates(candidates, self)
 
 
 # Called when code completion was activated
 # Inserts the selected item
 func _confirm_code_completion(replace:bool) -> void:
-	code_completion_helper.confirm_code_completion(replace, self)
+	$CodeCompletionHelper.confirm_code_completion(replace, self)
 
 
 ################################################################################
@@ -226,9 +227,9 @@ func _confirm_code_completion(replace:bool) -> void:
 
 # Performs an action (like opening a link) when a valid symbol was clicked
 func _on_symbol_lookup(symbol, line, column):
-	code_completion_helper.symbol_lookup(symbol, line, column)
+	$CodeCompletionHelper.symbol_lookup(symbol, line, column)
 
 
 # Called to test if a symbol can be clicked
 func _on_symbol_validate(symbol:String) -> void:
-	code_completion_helper.symbol_validate(symbol, self)
+	$CodeCompletionHelper.symbol_validate(symbol, self)

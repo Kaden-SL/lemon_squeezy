@@ -29,6 +29,7 @@ func _init() -> void:
 	set_default_color('Color9')
 	event_category = "Helpers"
 	event_sorting_index = 0
+	continue_at_end = true
 
 
 ################################################################################
@@ -55,7 +56,7 @@ func is_valid_event(string:String) -> bool:
 ################################################################################
 
 func build_event_editor():
-	add_header_edit('text', ValueType.SINGLELINE_TEXT, {'left_text':'#', 'autofocus':true})
+	add_header_edit('text', ValueType.SINGLELINE_TEXT, '#','',{'autofocus':true})
 
 
 #################### SYNTAX HIGHLIGHTING #######################################

@@ -13,11 +13,7 @@ extends Control
 ## What animation should the indicator do.
 @export_enum('bounce', 'blink', 'none') var animation := 0
 ## Set the image to use as the indicator.
-@export var texture := preload("res://addons/dialogic/Example Assets/next-indicator/next-indicator.png"):
-	set(_texture):
-		texture = _texture
-		if has_node('Texture'):
-			get_node('Texture').texture = texture
+@export var texture := preload("res://addons/dialogic/Example Assets/next-indicator/next-indicator.png")
 
 
 func _ready():
@@ -25,7 +21,6 @@ func _ready():
 	# Creating texture
 	if texture:
 		var icon := TextureRect.new()
-		icon.name = 'Texture'
 		icon.ignore_texture_size = true
 		icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		icon.size = Vector2(32,32)

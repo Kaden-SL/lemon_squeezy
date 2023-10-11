@@ -18,9 +18,7 @@ func clear_game_state(clear_flag:=Dialogic.ClearFlags.FULL_CLEAR):
 		reset()
 
 
-func load_game_state(load_flag:=LoadFlags.FULL_LOAD):
-	if load_flag == LoadFlags.ONLY_DNODES:
-		return
+func load_game_state():
 	dialogic.current_state_info['variables'] = merge_folder(dialogic.current_state_info['variables'], ProjectSettings.get_setting('dialogic/variables', {}).duplicate(true))
 
 

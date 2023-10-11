@@ -11,13 +11,11 @@ var animation_in : AnimationsIn
 var animation_out : AnimationsOut
 var animation_new_text : AnimationsNewText
 
-var full_clear := true
 
 func _ready():
 	Dialogic.Text.animation_textbox_hide.connect(_on_textbox_hide)
 	Dialogic.Text.animation_textbox_show.connect(_on_textbox_show)
 	Dialogic.Text.animation_textbox_new_text.connect(_on_textbox_new_text)
-	Dialogic.Text.about_to_show_text.connect(_on_about_to_show_text)
 
 
 func _on_textbox_show():
@@ -51,17 +49,12 @@ func _on_textbox_hide():
 		animation_finished.connect(Dialogic.Animation.animation_finished, CONNECT_ONE_SHOT)
 
 
-func _on_about_to_show_text(info:Dictionary) -> void:
-	full_clear = !info.append
-
-
 func _on_textbox_new_text():
 	if animation_new_text == AnimationsNewText.NONE:
 		return
 	
 	Dialogic.Animation.start_animating()
-	if full_clear:
-		%DialogicNode_DialogText.text = ""
+	%DialogicNode_DialogText.text = ""
 	match animation_new_text:
 		AnimationsNewText.WIGGLE:
 			play("new_text")

@@ -9,7 +9,6 @@ extends DialogicSubsystem
 
 var settings := {}
 
-var _connections := {}
 
 ####################################################################################################
 ##					MAIN METHODS
@@ -32,8 +31,6 @@ func _reload_settings() -> void:
 
 
 func _set(property:StringName, value:Variant) -> bool:
-	if not settings.has(property) or settings[property] != value:
-		_setting_changed(property, value)
 	settings[property] = value
 	if dialogic.has_subsystem('Save'):
 		dialogic.Save.set_global_info(property, value)
@@ -45,24 +42,12 @@ func _get(property:StringName) -> Variant:
 		return settings[property]
 	return null
 
-
-func _setting_changed(property:StringName, value:Variant) -> void:
-	if !property in _connections:
-		return
-	
-	for i in _connections[property]:
-		i.call(value)
-
 ####################################################################################################
 ##					HANDY METHODS
 ####################################################################################################
 
 func get_setting(property:StringName, default:Variant) -> Variant:
 	return _get(property) if _get(property) != null else default
-
-
-func has_setting(property:StringName) -> bool:
-	return property in settings
 
 
 func reset_all() -> void:
@@ -73,13 +58,6 @@ func reset_all() -> void:
 func reset_setting(property:StringName) -> void:
 	if ProjectSettings.has_setting('dialogic/settings/'+property):
 		settings[property] = ProjectSettings.get_setting('dialogic/settings/'+property)
-		_setting_changed(property, settings[property])
 	else:
 		settings.erase(property)
-		_setting_changed(property, null)
 
-
-func connect_to_change(setting:StringName, callable:Callable) -> void:
-	if !setting in _connections:
-		_connections[setting] = []
-	_connections[setting].append(callable)

@@ -16,9 +16,7 @@ enum Alignment {LEFT, CENTER, RIGHT}
 @export var start_hidden := true
 
 var revealing := false
-var base_visible_characters := 0
-# time per character
-var lspeed:float = 0.01
+var speed:float = 0.01
 var speed_counter:float = 0
 
 
@@ -42,34 +40,28 @@ func _ready() -> void:
 
 
 # this is called by the DialogicGameHandler to set text
-func reveal_text(_text:String, keep_previous:=false) -> void:
+func reveal_text(_text:String) -> void:
 	if !enabled:
 		return
+	
+	speed = Dialogic.Settings.get_setting('text_speed', 0.01)
+	text = _text
 	show()
-	
-	if !keep_previous:
-		text = _text
-		base_visible_characters = 0
-		if alignment == Alignment.CENTER:
-			text = '[center]'+text
-		elif alignment == Alignment.RIGHT:
-			text = '[right]'+text
-		visible_characters = 0
-	else:
-		base_visible_characters = len(text)
-		visible_characters = len(text)
-		text = text+_text
-	
+	if alignment == Alignment.CENTER:
+		text = '[center]'+text
+	elif alignment == Alignment.RIGHT:
+		text = '[right]'+text
+	visible_characters = 0
 	revealing = true
 	speed_counter = 0
-	started_revealing_text.emit()
+	emit_signal('started_revealing_text')
 
 
 # called by the timer -> reveals more text
 func continue_reveal() -> void:
 	if visible_characters <= get_total_character_count():
 		revealing = false
-		await Dialogic.Text.execute_effects(visible_characters-base_visible_characters, self, false)
+		await Dialogic.Text.execute_effects(visible_characters, self, false)
 		if visible_characters == -1:
 			return
 		revealing = true
@@ -98,6 +90,6 @@ func _process(delta:float) -> void:
 	if !revealing or Dialogic.paused:
 		return
 	speed_counter += delta
-	while speed_counter > lspeed and revealing and !Dialogic.paused:
-		speed_counter -= lspeed
+	while speed_counter > speed and revealing and !Dialogic.paused:
+		speed_counter -= speed
 		continue_reveal()

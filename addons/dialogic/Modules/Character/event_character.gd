@@ -65,7 +65,7 @@ var _character_from_directory: String:
 ## Used by [_character_from_directory]
 var _character_directory: Dictionary = {}
 # Reference regex without Godot escapes: (?<type>Join|Update|Leave)\s*(")?(?<name>(?(2)[^"\n]*|[^(: \n]*))(?(2)"|)(\W*\((?<portrait>.*)\))?(\s*(?<position>\d))?(\s*\[(?<shortcode>.*)\])?
-var regex := RegEx.create_from_string("(?<type>join|update|leave)\\s*(\")?(?<name>(?(2)[^\"\\n]*|[^(: \\n]*))(?(2)\"|)(\\W*\\((?<portrait>.*)\\))?(\\s*(?<position>\\d))?(\\s*\\[(?<shortcode>.*)\\])?")
+var regex := RegEx.create_from_string("(?<type>Join|Update|Leave)\\s*(\")?(?<name>(?(2)[^\"\\n]*|[^(: \\n]*))(?(2)\"|)(\\W*\\((?<portrait>.*)\\))?(\\s*(?<position>\\d))?(\\s*\\[(?<shortcode>.*)\\])?")
 
 ################################################################################
 ## 						EXECUTION
@@ -130,6 +130,8 @@ func _init() -> void:
 	set_default_color('Color2')
 	event_category = "Main"
 	event_sorting_index = 2
+	continue_at_end = true
+	expand_by_default = false
 
 
 func _get_icon() -> Resource:
@@ -143,9 +145,9 @@ func to_text() -> String:
 	var result_string := ""
 	
 	match action:
-		Actions.JOIN: result_string += "join "
-		Actions.LEAVE: result_string += "leave "
-		Actions.UPDATE: result_string += "update "
+		Actions.JOIN: result_string += "Join "
+		Actions.LEAVE: result_string += "Leave "
+		Actions.UPDATE: result_string += "Update "
 	
 	var default_values := DialogicUtil.get_custom_event_defaults(event_name)
 	
@@ -213,11 +215,11 @@ func from_text(string:String) -> void:
 	var result := regex.search(string)
 	
 	match result.get_string('type'):
-		"join":
+		"Join":
 			action = Actions.JOIN
-		"leave":
+		"Leave":
 			action = Actions.LEAVE
-		"update":
+		"Update":
 			action = Actions.UPDATE
 	
 	if result.get_string('name').strip_edges():
@@ -261,7 +263,7 @@ func from_text(string:String) -> void:
 		animation_name = shortcode_params.get('animation', '')
 		if animation_name != "":
 			if !animation_name.ends_with('.gd'):
-				animation_name = DialogicUtil.guess_animation_file(animation_name)
+				animation_name = guess_animation_file(animation_name)
 			if !animation_name.ends_with('.gd'):
 				printerr("[Dialogic] Couldn't identify animation '"+animation_name+"'.")
 				animation_name = ""
@@ -277,7 +279,7 @@ func from_text(string:String) -> void:
 			#repeat is supported on Update, the other two should not be checking this
 			if action == Actions.UPDATE:
 				animation_repeats = int(shortcode_params.get('repeat', animation_repeats))
-				position_move_time = float(shortcode_params.get('move_time', position_move_time))
+				position_move_time = shortcode_params.get('move_time', position_move_time)
 		#move time is only supported on Update, but it isnt part of the animations so its separate
 		if action == Actions.UPDATE:
 			position_move_time = float(shortcode_params.get('move_time', position_move_time))
@@ -319,7 +321,7 @@ func get_shortcode_parameters() -> Dictionary:
 
 
 func is_valid_event(string:String) -> bool:
-	if string.begins_with("join") or string.begins_with("leave") or string.begins_with("update"):
+	if string.begins_with("Join") or string.begins_with("Leave") or string.begins_with("Update"):
 		return true
 	return false
 
@@ -329,7 +331,7 @@ func is_valid_event(string:String) -> bool:
 ################################################################################
 
 func build_event_editor() -> void:
-	add_header_edit('action', ValueType.FIXED_OPTION_SELECTOR, {
+	add_header_edit('action', ValueType.FIXED_OPTION_SELECTOR, '', '', {
 		'selector_options': [
 			{
 				'label': 'Join',
@@ -348,7 +350,7 @@ func build_event_editor() -> void:
 			}
 		]
 	})
-	add_header_edit('_character_from_directory', ValueType.COMPLEX_PICKER,  
+	add_header_edit('_character_from_directory', ValueType.COMPLEX_PICKER, '', '', 
 			{'placeholder'		: 'Character',
 			'file_extension' 	: '.dch', 
 			'suggestions_func' 	: get_character_suggestions, 
@@ -356,44 +358,43 @@ func build_event_editor() -> void:
 			'autofocus'			: true})
 #	add_header_button('', _on_character_edit_pressed, 'Edit character', ["ExternalLink", "EditorIcons"], 'character != null and _character_from_directory != "--All--"')
 	
-	add_header_edit('set_portrait', ValueType.BOOL,
+	add_header_edit('set_portrait', ValueType.BOOL, '', '', 
 			{'icon':load("res://addons/dialogic/Modules/Character/update_portrait.svg"),
-			 'tooltip':'Change Portrait'}, "should_show_portrait_selector() and action == Actions.UPDATE")
-	add_header_edit('portrait', ValueType.COMPLEX_PICKER,
+			 'tooltip':'Change Portrait'}, "action == Actions.UPDATE")
+	add_header_edit('portrait', ValueType.COMPLEX_PICKER, '', '', 
 			{'placeholder'		: 'Default',
 			'collapse_when_empty':true,
 			'suggestions_func' 	: get_portrait_suggestions, 
 			'icon' 				: load("res://addons/dialogic/Editor/Images/Resources/portrait.svg")}, 
-			'should_show_portrait_selector() and (action != Actions.UPDATE or set_portrait)')
-	add_header_edit('set_position', ValueType.BOOL,  
-			{'icon': load("res://addons/dialogic/Modules/Character/update_position.svg"), 'tooltip':'Change Position'}, "character != null and !has_no_portraits() and action == Actions.UPDATE")
+			'should_show_portrait_selector()')
+	add_header_edit('set_position', ValueType.BOOL, '', '', 
+			{'icon': load("res://addons/dialogic/Modules/Character/update_position.svg"), 'tooltip':'Change Position'}, "action == Actions.UPDATE")
 	add_header_label('at position', 'character != null and !has_no_portraits() and action == Actions.JOIN')
 	add_header_label('to position', 'character != null and !has_no_portraits() and action == Actions.UPDATE and set_position')
-	add_header_edit('position', ValueType.INTEGER, {}, 
+	add_header_edit('position', ValueType.INTEGER, '', '', {}, 
 			'character != null and !has_no_portraits() and action != %s and (action != Actions.UPDATE or set_position)' %Actions.LEAVE)
 	
 	# Body
-	add_body_edit('animation_name', ValueType.COMPLEX_PICKER,
-			{'left_text'		: 'Animation:',
-			'suggestions_func' 	: get_animation_suggestions, 
+	add_body_edit('animation_name', ValueType.COMPLEX_PICKER, 'Animation:', '', 
+			{'suggestions_func' 	: get_animation_suggestions, 
 			'editor_icon' 			: ["Animation", "EditorIcons"], 
 			'placeholder' 			: 'Default',
 			'enable_pretty_name' 	: true}, 
 			'should_show_animation_options()')
-	add_body_edit('animation_length', ValueType.FLOAT, {'left_text':'Length:'}, 
+	add_body_edit('animation_length', ValueType.FLOAT, 'Length:', '', {}, 
 			'should_show_animation_options() and !animation_name.is_empty()')
-	add_body_edit('animation_wait', ValueType.BOOL, {'left_text':'Await end:'}, 
+	add_body_edit('animation_wait', ValueType.BOOL, 'Await end:', '', {}, 
 			'should_show_animation_options() and !animation_name.is_empty()')
-	add_body_edit('animation_repeats', ValueType.INTEGER, {'left_text':'Repeat:'},
+	add_body_edit('animation_repeats', ValueType.INTEGER, 'Repeat:', '', {},
 			'should_show_animation_options() and !animation_name.is_empty() and action == %s)' %Actions.UPDATE)
 	add_body_line_break()
-	add_body_edit('position_move_time', ValueType.FLOAT, {'left_text':'Movement duration:'}, 
+	add_body_edit('position_move_time', ValueType.FLOAT, 'Movement duration:', '', {}, 
 			'action == %s and set_position' %Actions.UPDATE)
-	add_body_edit('set_z_index', ValueType.BOOL, {'icon':load("res://addons/dialogic/Modules/Character/update_z_index.svg"), 'tooltip':'Change Z-Index'}, "character != null and action == Actions.UPDATE")
-	add_body_edit('z_index', ValueType.INTEGER, {'left_text':'Z-index:'},
+	add_body_edit('set_z_index', ValueType.BOOL, '', '', {'icon':load("res://addons/dialogic/Modules/Character/update_z_index.svg"), 'tooltip':'Change Z-Index'}, "action == Actions.UPDATE")
+	add_body_edit('z_index', ValueType.INTEGER, 'Z-index:', "",{},
 			'action != %s and (action != Actions.UPDATE or set_z_index)' %Actions.LEAVE)
-	add_body_edit('set_mirrored', ValueType.BOOL, {'icon':load("res://addons/dialogic/Modules/Character/update_mirror.svg"), 'tooltip':'Change Mirroring'}, "character != null and action == Actions.UPDATE")
-	add_body_edit('mirrored', ValueType.BOOL, {'left_text':'Mirrored:'},
+	add_body_edit('set_mirrored', ValueType.BOOL, '', '', {'icon':load("res://addons/dialogic/Modules/Character/update_mirror.svg"), 'tooltip':'Change Mirroring'}, "action == Actions.UPDATE")
+	add_body_edit('mirrored', ValueType.BOOL, 'Mirrored:', "",{},
 			'action != %s and (action != Actions.UPDATE or set_mirrored)' %Actions.LEAVE)
 
 
@@ -401,7 +402,7 @@ func should_show_animation_options() -> bool:
 	return (character != null and !character.portraits.is_empty()) or _character_from_directory == '--All--' 
 
 func should_show_portrait_selector() -> bool:
-	return character != null and len(character.portraits) > 1 and action != Actions.LEAVE
+	return character != null and len(character.portraits) > 1 and action != Actions.LEAVE and (action != Actions.UPDATE or set_portrait)
 
 func has_no_portraits() -> bool:
 	return character and character.portraits.is_empty()
@@ -444,6 +445,7 @@ func get_animation_suggestions(search_text:String) -> Dictionary:
 		Actions.UPDATE:
 			suggestions['None'] = {'value':"", 'editor_icon':["GuiRadioUnchecked", "EditorIcons"]}
 	
+	
 	match action:
 		Actions.JOIN:
 			for anim in DialogicUtil.get_portrait_animation_scripts(DialogicUtil.AnimationType.IN):
@@ -458,6 +460,13 @@ func get_animation_suggestions(search_text:String) -> Dictionary:
 	return suggestions
 
 
+func guess_animation_file(animation_name: String) -> String:
+	for file in DialogicUtil.get_portrait_animation_scripts():
+		if DialogicUtil.pretty_name(animation_name) == DialogicUtil.pretty_name(file):
+			return file
+	return animation_name
+
+
 func _on_character_edit_pressed() -> void:
 	var editor_manager := _editor_node.find_parent('EditorsManager')
 	if editor_manager:
@@ -467,12 +476,15 @@ func _on_character_edit_pressed() -> void:
 ####################### CODE COMPLETION ########################################
 ################################################################################
 
+#var completion_character_getter_regex := RegEx.new()
 func _get_code_completion(CodeCompletionHelper:Node, TextNode:TextEdit, line:String, word:String, symbol:String) -> void:
 	if symbol == ' ' and line.count(' ') == 1:
 		CodeCompletionHelper.suggest_characters(TextNode, CodeEdit.KIND_MEMBER)
-		if line.begins_with('leave'):
+		if line.begins_with('Leave'):
 			TextNode.add_code_completion_option(CodeEdit.KIND_MEMBER, 'All', '--All-- ', event_color, TextNode.get_theme_icon("GuiEllipsis", "EditorIcons"))
 	
+#	if completion_character_getter_regex.get_pattern().is_empty():
+#		completion_character_getter_regex.compile("(?<type>Join|Update|Leave)\\s*(\")?(?<name>(?(2)[^\"\\n]*|[^(: \\n]*))(?(2)\"|)(\\W*\\((?<portrait>.*)\\))?(\\s*(?<position>\\d))?(\\s*\\[(?<shortcode>.*)\\])?")
 	if symbol == '(':
 		var character:= regex.search(line).get_string('name')
 		CodeCompletionHelper.suggest_portraits(TextNode, character)
@@ -484,12 +496,12 @@ func _get_code_completion(CodeCompletionHelper:Node, TextNode:TextEdit, line:Str
 			TextNode.add_code_completion_option(CodeEdit.KIND_MEMBER, 'length', 'length="', TextNode.syntax_highlighter.normal_color)
 		if !'wait=' in line:
 			TextNode.add_code_completion_option(CodeEdit.KIND_MEMBER, 'wait', 'wait="', TextNode.syntax_highlighter.normal_color)
-		if line.begins_with('update'):
+		if line.begins_with('Update'):
 			if !'repeat=' in line:
 				TextNode.add_code_completion_option(CodeEdit.KIND_MEMBER, 'repeat', 'repeat="', TextNode.syntax_highlighter.normal_color)
 			if !'move_time=' in line:
 				TextNode.add_code_completion_option(CodeEdit.KIND_MEMBER, 'move_time', 'move_time="', TextNode.syntax_highlighter.normal_color)
-		if !line.begins_with('leave'):
+		if !line.begins_with('Leave'):
 			if !'mirrored=' in line:
 				TextNode.add_code_completion_option(CodeEdit.KIND_MEMBER, 'mirrored', 'mirrored="', TextNode.syntax_highlighter.normal_color)
 			if !'z_index=' in line:
@@ -499,11 +511,11 @@ func _get_code_completion(CodeCompletionHelper:Node, TextNode:TextEdit, line:Str
 	if '[' in line:
 		if CodeCompletionHelper.get_line_untill_caret(line).ends_with('animation="'):
 			var animations := []
-			if line.begins_with('join'):
+			if line.begins_with('Join'):
 				animations = DialogicUtil.get_portrait_animation_scripts(DialogicUtil.AnimationType.IN)
-			if line.begins_with('update'):
+			if line.begins_with('Update'):
 				animations = DialogicUtil.get_portrait_animation_scripts(DialogicUtil.AnimationType.ACTION)
-			if line.begins_with('leave'):
+			if line.begins_with('Leave'):
 				animations = DialogicUtil.get_portrait_animation_scripts(DialogicUtil.AnimationType.ALL)
 			for script in animations:
 				TextNode.add_code_completion_option(CodeEdit.KIND_MEMBER, DialogicUtil.pretty_name(script), DialogicUtil.pretty_name(script)+'" ', TextNode.syntax_highlighter.normal_color)
@@ -512,9 +524,9 @@ func _get_code_completion(CodeCompletionHelper:Node, TextNode:TextEdit, line:Str
 
 
 func _get_start_code_completion(CodeCompletionHelper:Node, TextNode:TextEdit) -> void:
-	TextNode.add_code_completion_option(CodeEdit.KIND_PLAIN_TEXT, 'join', 'join ', event_color, load('res://addons/dialogic/Editor/Images/Dropdown/join.svg'))
-	TextNode.add_code_completion_option(CodeEdit.KIND_PLAIN_TEXT, 'leave', 'leave ', event_color, load('res://addons/dialogic/Editor/Images/Dropdown/leave.svg'))
-	TextNode.add_code_completion_option(CodeEdit.KIND_PLAIN_TEXT, 'update', 'update ', event_color, load('res://addons/dialogic/Editor/Images/Dropdown/update.svg'))
+	TextNode.add_code_completion_option(CodeEdit.KIND_PLAIN_TEXT, 'Join', 'Join ', event_color, load('res://addons/dialogic/Editor/Images/Dropdown/join.svg'))
+	TextNode.add_code_completion_option(CodeEdit.KIND_PLAIN_TEXT, 'Leave', 'Leave ', event_color, load('res://addons/dialogic/Editor/Images/Dropdown/leave.svg'))
+	TextNode.add_code_completion_option(CodeEdit.KIND_PLAIN_TEXT, 'Update', 'Update ', event_color, load('res://addons/dialogic/Editor/Images/Dropdown/update.svg'))
 
 
 #################### SYNTAX HIGHLIGHTING #######################################

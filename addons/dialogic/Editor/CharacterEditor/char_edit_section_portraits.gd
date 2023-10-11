@@ -4,9 +4,6 @@ extends DialogicCharacterEditorMainSection
 ## The general portrait settings section
 var loading := false
 
-func _get_title() -> String:
-	return "Portraits"
-
 func _ready() -> void:
 	# Connecting all necessary signals
 	%DefaultPortraitPicker.value_changed.connect(default_portrait_changed)
