@@ -1,10 +1,42 @@
 2a60927148abd1d33b818b535e306557
-::res://::1696622258
+::res://::1696998004
 icon.svg::CompressedTexture2D::3604967623761785578::1684971234::1686101989::1::::<><>::
-map.tscn::PackedScene::1639134538609314474::1696619998::0::1::::<><>::uid://cexpgp51nbv2o<>uid://dpsk87sqm2jr2
-Player.gd::GDScript::-1::1684971234::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::8249921315647150233::1696619402::0::1::::<><>::res://Player.gd<>uid://daqagidjpsmge
+map.tscn::PackedScene::1639134538609314474::1696997966::0::1::::<><>::uid://cexpgp51nbv2o<>uid://dpsk87sqm2jr2
 README.md::TextFile::-1::1696618929::0::1::::<><>::
-::res://gameArt/::1696619511
+::res://Game Objects/::1696997966
+Player.gd::GDScript::-1::1684971234::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::8249921315647150233::1696997966::0::1::::<><>::res://Game Objects/Player.gd<>uid://daqagidjpsmge
+::res://gameArt/::1696973930
+demonset.png::CompressedTexture2D::351201978100713948::1696973895::1696973930::1::::<><>::
 Fox.png::CompressedTexture2D::7192303235158588768::1684971234::1684971234::1::::<><>::
+heart_sprite_1.png::CompressedTexture2D::7359167698847790896::1696973895::1696973930::1::::<><>::
+heart_sprite_2.png::CompressedTexture2D::2724449220872739577::1696973895::1696973930::1::::<><>::
 Tileset.png::CompressedTexture2D::5101999735329775376::1684971234::1684971234::1::::<><>::
+::res://gameArt/placeholder character/::1696973930
+placeholder_char_back.png::CompressedTexture2D::4681765287417643396::1696973895::1696973930::1::::<><>::
+placeholder_char_front.png::CompressedTexture2D::4350042584291600821::1696973895::1696973930::1::::<><>::
+placeholder_char_side1.png::CompressedTexture2D::5884968344329248286::1696973895::1696973930::1::::<><>::
+placeholder_char_side2.png::CompressedTexture2D::6463308234860209993::1696973895::1696973930::1::::<><>::
+placeholder_char_side3.png::CompressedTexture2D::7674384052700452203::1696973895::1696973930::1::::<><>::
+placeholder_char_side4.png::CompressedTexture2D::7160832680630317511::1696973895::1696973930::1::::<><>::
+placeholder_char_side5.png::CompressedTexture2D::8063178495760168918::1696973895::1696973930::1::::<><>::
+placeholder_char_side6.png::CompressedTexture2D::6924097147042821797::1696973895::1696973930::1::::<><>::
+topdown1.png::CompressedTexture2D::2316044654726440702::1696973895::1696973930::1::::<><>::
+topdown2.png::CompressedTexture2D::8839327372806765017::1696973895::1696973930::1::::<><>::
+topdown3.png::CompressedTexture2D::6389554081773262355::1696973895::1696973930::1::::<><>::
+topdown4.png::CompressedTexture2D::4733073773064432571::1696973895::1696973930::1::::<><>::
+::res://gameArt/placeholder demon/::1696973930
+demon_back.png::CompressedTexture2D::4308598365490934496::1696973895::1696973930::1::::<><>::
+demon_front.png::CompressedTexture2D::2768060711903844913::1696973895::1696973930::1::::<><>::
+demon_side1.png::CompressedTexture2D::5165534408461725747::1696973895::1696973930::1::::<><>::
+demon_side2.png::CompressedTexture2D::6835870588713888232::1696973895::1696973930::1::::<><>::
+demon_side3.png::CompressedTexture2D::2544415689091042392::1696973895::1696973930::1::::<><>::
+demon_side4.png::CompressedTexture2D::470156628496271648::1696973895::1696973930::1::::<><>::
+demon_side5.png::CompressedTexture2D::890565826972471149::1696973895::1696973930::1::::<><>::
+demon_side6.png::CompressedTexture2D::130612662568241853::1696973895::1696973930::1::::<><>::
+demon_topdown1.png::CompressedTexture2D::5314066408903167976::1696973895::1696973930::1::::<><>::
+demon_topdown2.png::CompressedTexture2D::1735876588752612726::1696973895::1696973930::1::::<><>::
+demon_topdown3.png::CompressedTexture2D::1311340670247287517::1696973895::1696973930::1::::<><>::
+demon_topdown4.png::CompressedTexture2D::7149777474751507228::1696973895::1696973930::1::::<><>::
+::res://Levels/::1696997966
+limbo.tscn::PackedScene::3194154563962176097::1696997966::0::1::::<><>::uid://faeilsasv6ts<>uid://dpsk87sqm2jr2
