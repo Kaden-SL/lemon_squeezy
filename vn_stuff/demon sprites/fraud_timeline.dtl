@@ -1,0 +1,6 @@
+[background arg="res://gameArt/fraud_bg_placeholder.jpg" fade="0.0"]
+Join fraud_demon 2
+fraud_demon (neutral_talk_1): testing, testing
+Update fraud_demon 30 [ move_time="3"]
+Join MC 1 [ mirrored="true"]
+MC: kachow

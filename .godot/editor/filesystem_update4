@@ -1,6 +1,10 @@
-res://Game Objects/TopDownPlayer.tscn
-res://lust.tscn
+res://vn_stuff/fraud_demon.dch
 res://map.tscn
+res://README.md
 res://Levels/limbo.tscn
 res://Game Objects/Player.tscn
-res://Game Objects/TopDownPlayer.gd
+res://Game Objects/TopDownPlayer.tscn
+res://lust.tscn
+res://vn_stuff/demon sprites/fraud_timeline.dtl
+res://vn_stuff/MC.dch
+res://vn_stuff/fraud.tscn
