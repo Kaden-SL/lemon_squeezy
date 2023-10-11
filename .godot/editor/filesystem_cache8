@@ -1,9 +1,10 @@
 2a60927148abd1d33b818b535e306557
-::res://::1697046405
+::res://::1697047991
 game_ui.tscn::PackedScene::-1::1693319150::0::1::::<><>::res://addons/dialogic/Modules/Background/node_background_holder.gd<>res://addons/dialogic/Modules/Text/node_dialog_text.gd<>res://addons/dialogic/Modules/Choice/node_choice_button.gd<>res://addons/dialogic/Modules/Text/node_next_indicator.gd<>uid://bvqgwmds7enrv<>res://addons/dialogic/Modules/Text/node_name_label.gd
 icon.svg::CompressedTexture2D::3604967623761785578::1684971234::1686101989::1::::<><>::
-map.tscn::PackedScene::1639134538609314474::1696997966::0::1::::<><>::uid://cexpgp51nbv2o<>uid://dpsk87sqm2jr2
+map.tscn::PackedScene::1639134538609314474::1697047991::0::1::::<><>::uid://cexpgp51nbv2o<>uid://dpsk87sqm2jr2
 README.md::TextFile::-1::1696618929::0::1::::<><>::
+lust.tscn::PackedScene::4809376463474503779::1697047991::0::1::::<><>::uid://faeilsasv6ts<>uid://465sgu5fdw2i
 ::res://addons/::1693319150
 ::res://addons/dialogic/::1693319150
 plugin.cfg::TextFile::-1::1693319150::0::1::::<><>::
@@ -467,9 +468,11 @@ event.gd::GDScript::-1::1693319150::0::1::::DialogicEvent<>Resource<>::
 timeline.gd::GDScript::-1::1693319150::0::1::::DialogicTimeline<>Resource<>::
 TimelineResourceLoader.gd::GDScript::-1::1693319150::0::1::::DialogicTimelineFormatLoader<>ResourceFormatLoader<>::
 TimelineResourceSaver.gd::GDScript::-1::1693319150::0::1::::DialogicTimelineFormatSaver<>ResourceFormatSaver<>::
-::res://Game Objects/::1696997966
+::res://Game Objects/::1697047991
 Player.gd::GDScript::-1::1684971234::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::8249921315647150233::1696997966::0::1::::<><>::res://Game Objects/Player.gd<>uid://daqagidjpsmge
+Player.tscn::PackedScene::8249921315647150233::1697047991::0::1::::<><>::res://Game Objects/Player.gd<>uid://daqagidjpsmge
+TopDownPlayer.gd::GDScript::-1::1697047605::0::1::::<>CharacterBody2D<>::
+TopDownPlayer.tscn::PackedScene::2101326177358152094::1697047991::0::1::::<><>::res://Game Objects/TopDownPlayer.gd<>uid://dx63ovr8j8lqv
 ::res://gameArt/::1697044856
 demonset.png::CompressedTexture2D::351201978100713948::1697044834::1697044856::1::::<><>::
 Fox.png::CompressedTexture2D::7192303235158588768::1684971234::1684971234::1::::<><>::
@@ -502,10 +505,10 @@ demon_topdown1.png::CompressedTexture2D::5314066408903167976::1696973895::169697
 demon_topdown2.png::CompressedTexture2D::1735876588752612726::1696973895::1696973930::1::::<><>::
 demon_topdown3.png::CompressedTexture2D::1311340670247287517::1696973895::1696973930::1::::<><>::
 demon_topdown4.png::CompressedTexture2D::7149777474751507228::1696973895::1696973930::1::::<><>::
-::res://Levels/::1697046084
-limbo.tscn::PackedScene::3194154563962176097::1697046084::0::1::::<><>::uid://faeilsasv6ts<>uid://dpsk87sqm2jr2
-::res://vn_stuff/::1697046085
+::res://Levels/::1697047991
+limbo.tscn::PackedScene::3194154563962176097::1697047991::0::1::::<><>::uid://faeilsasv6ts<>uid://dpsk87sqm2jr2
+::res://vn_stuff/::1697046578
 dup_portrait.png::CompressedTexture2D::7023516491796631048::1697045875::1697045894::1::::<><>::
 test_bg.png::::-1::0::0::0::::<><>::
-test_character.dch::Resource::-1::1697046085::0::1::::<><>::
-test_timeline.dtl::Resource::-1::1697045664::0::1::::<><>::
+test_character.dch::Resource::-1::1697046454::0::1::::<><>::
+test_timeline.dtl::Resource::-1::1697046578::0::1::::<><>::

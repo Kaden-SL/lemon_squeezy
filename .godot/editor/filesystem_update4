@@ -1,2 +1,6 @@
+res://Game Objects/TopDownPlayer.tscn
+res://lust.tscn
+res://map.tscn
 res://Levels/limbo.tscn
-res://vn_stuff/test_character.dch
+res://Game Objects/Player.tscn
+res://Game Objects/TopDownPlayer.gd
