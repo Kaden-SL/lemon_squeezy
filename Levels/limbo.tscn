@@ -367,9 +367,10 @@ sources/3 = SubResource("TileSetAtlasSource_eyfrt")
 [node name="limbo" type="Node2D"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_fgymf")]
-position = Vector2(12, -20)
+position = Vector2(15, -16)
 
 [node name="TileMap" type="TileMap" parent="."]
+position = Vector2(-21, 34)
 tile_set = SubResource("TileSet_xvik0")
 format = 2
 layer_0/tile_data = PackedInt32Array(4, 327683, 7, 3, 327683, 7, 2, 327683, 7, 1, 327683, 7, 0, 327683, 7, 65535, 327683, 7, 65534, 327683, 7)
