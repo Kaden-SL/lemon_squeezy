@@ -1,3 +1,9 @@
+Label
+TextureRect
+MarginContainer
+NinePatchRect
+HBoxContainer
+VBoxContainer
 CollisionShape2D
 CharacterBody2D
 Area2D

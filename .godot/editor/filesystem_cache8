@@ -1,9 +1,10 @@
 2a60927148abd1d33b818b535e306557
-::res://::1697128814
+::res://::1697133822
 game_ui.tscn::PackedScene::-1::1693319150::0::1::::<><>::res://addons/dialogic/Modules/Background/node_background_holder.gd<>res://addons/dialogic/Modules/Text/node_dialog_text.gd<>res://addons/dialogic/Modules/Choice/node_choice_button.gd<>res://addons/dialogic/Modules/Text/node_next_indicator.gd<>uid://bvqgwmds7enrv<>res://addons/dialogic/Modules/Text/node_name_label.gd
 icon.svg::CompressedTexture2D::3604967623761785578::1684971234::1697128817::1::::<><>::
-map.tscn::PackedScene::1639134538609314474::1697085972::0::1::::<><>::uid://cexpgp51nbv2o<>uid://dpsk87sqm2jr2
+map.tscn::PackedScene::1639134538609314474::1697130791::0::1::::<><>::uid://cexpgp51nbv2o<>uid://dpsk87sqm2jr2
 README.md::TextFile::-1::1697059626::0::1::::<><>::
+heart2.tscn::PackedScene::1467827275704211631::1697133341::0::1::::<><>::uid://dc33of3ndrguy<>uid://be20jsnrvji78
 ::res://addons/::1693319150
 ::res://addons/dialogic/::1693319150
 plugin.cfg::TextFile::-1::1693319150::0::1::::<><>::
@@ -93,13 +94,13 @@ home_page.gd::GDScript::-1::1693319150::0::1::::<>DialogicEditor<>::
 home_page.tscn::PackedScene::5947401273500014660::1693319150::0::1::::<><>::res://addons/dialogic/Editor/HomePage/home_page.gd<>uid://cvmlp5nxb2rer<>uid://bt87p6qlso0ya
 icon_bg.png::CompressedTexture2D::6272275887492997861::1693319150::1693319150::1::::<><>::
 tips.txt::TextFile::-1::1693319150::0::1::::<><>::
-::res://addons/dialogic/Editor/Images/::1697128794
+::res://addons/dialogic/Editor/Images/::1697128817
 dialogic-logo.svg::CompressedTexture2D::3790104562841938052::1693319150::1697128817::1::::<><>::
 plugin-icon.svg::CompressedTexture2D::8846273605144170474::1693319150::1697128817::1::::<><>::
 preview_character.png::CompressedTexture2D::2091084072335210920::1693319150::1693319150::1::::<><>::
 preview_character_speaker.png::CompressedTexture2D::8278972532691820378::1693319150::1693319150::1::::<><>::
 Unknown.png::CompressedTexture2D::2468576728646207283::1693319150::1693319150::1::::<><>::
-::res://addons/dialogic/Editor/Images/Dropdown/::1697086242
+::res://addons/dialogic/Editor/Images/Dropdown/::1697128817
 default.svg::CompressedTexture2D::3699310598590037939::1693319150::1697128817::1::::<><>::
 divide.svg::CompressedTexture2D::6901258230860890461::1693319150::1697128817::1::::<><>::
 join.svg::CompressedTexture2D::4652731984810704514::1693319150::1697128817::1::::<><>::
@@ -109,7 +110,7 @@ multiply.svg::CompressedTexture2D::7394628180941628304::1693319150::1697128817::
 plus.svg::CompressedTexture2D::5930089714513836210::1693319150::1697128817::1::::<><>::
 set.svg::CompressedTexture2D::7374282244844152748::1693319150::1697128817::1::::<><>::
 update.svg::CompressedTexture2D::1388319587067716478::1693319150::1697128817::1::::<><>::
-::res://addons/dialogic/Editor/Images/Pieces/::1697128794
+::res://addons/dialogic/Editor/Images/Pieces/::1697128817
 add-folder.svg::CompressedTexture2D::70289101131231738::1693319150::1697128817::1::::<><>::
 closed-icon.svg::CompressedTexture2D::8832306723559159287::1693319150::1697128817::1::::<><>::
 expand-icon.svg::CompressedTexture2D::5598266563617168116::1693319150::1697128817::1::::<><>::
@@ -117,11 +118,11 @@ open-icon.svg::CompressedTexture2D::848339285911761348::1693319150::1697128817::
 variable.svg::CompressedTexture2D::7736806399882628569::1693319150::1697128817::1::::<><>::
 variable_icon.png::CompressedTexture2D::582349284127075295::1693319150::1693319150::1::::<><>::
 warning.svg::CompressedTexture2D::9223293116452544095::1693319150::1697128817::1::::<><>::
-::res://addons/dialogic/Editor/Images/Resources/::1697128794
+::res://addons/dialogic/Editor/Images/Resources/::1697128817
 character.svg::CompressedTexture2D::2464911902091785916::1693319150::1697128817::1::::<><>::
 icon_character.png::CompressedTexture2D::3275168337811362221::1693319150::1693319150::1::::<><>::
 portrait.svg::CompressedTexture2D::7528673539557211468::1693319150::1697128817::1::::<><>::
-::res://addons/dialogic/Editor/Images/Toolbar/::1697086242
+::res://addons/dialogic/Editor/Images/Toolbar/::1697128817
 add-character.svg::CompressedTexture2D::893739393082554513::1693319150::1697128817::1::::<><>::
 add-timeline.svg::CompressedTexture2D::4096396075137893428::1693319150::1697128817::1::::<><>::
 ::res://addons/dialogic/Editor/Settings/::1693319150
@@ -236,7 +237,7 @@ subsystem_backgrounds.gd::GDScript::-1::1693319150::0::1::::<>DialogicSubsystem<
 event_call_node.gd::GDScript::-1::1693319150::0::1::::DialogicCallNodeEvent<>DialogicEvent<>::
 icon.png::CompressedTexture2D::8606518780689924191::1693319150::1693319150::1::::<><>::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
-::res://addons/dialogic/Modules/Character/::1697086242
+::res://addons/dialogic/Modules/Character/::1697128817
 class_dialogic_animation.gd::GDScript::-1::1693319150::0::1::::DialogicAnimation<>Node<>::
 default_portrait.gd::GDScript::-1::1693319150::0::1::::<>DialogicPortrait<>::
 default_portrait.tscn::PackedScene::4408357561561711185::1693319150::0::1::::<><>::res://addons/dialogic/Modules/Character/default_portrait.gd
@@ -278,7 +279,7 @@ zoom_in.gd::GDScript::-1::1693319150::0::1::::<>DialogicAnimation<>::
 zoom_in_center.gd::GDScript::-1::1693319150::0::1::::<>DialogicAnimation<>::
 zoom_out.gd::GDScript::-1::1693319150::0::1::::<>DialogicAnimation<>::
 zoom_out_center.gd::GDScript::-1::1693319150::0::1::::<>DialogicAnimation<>::
-::res://addons/dialogic/Modules/Choice/::1697086242
+::res://addons/dialogic/Modules/Choice/::1697128817
 event_choice.gd::GDScript::-1::1693319150::0::1::::DialogicChoiceEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::1552118133808780732::1693319150::1697128817::1::::<><>::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
@@ -293,7 +294,7 @@ ui_choice_end.tscn::PackedScene::-1::1693319150::0::1::::<><>::res://addons/dial
 event_comment.gd::GDScript::-1::1693319150::0::1::::DialogicCommentEvent<>DialogicEvent<>::
 icon.png::CompressedTexture2D::494830544991740231::1693319150::1693319150::1::::<><>::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
-::res://addons/dialogic/Modules/Condition/::1697086242
+::res://addons/dialogic/Modules/Condition/::1697128817
 event_condition.gd::GDScript::-1::1693319150::0::1::::DialogicConditionEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::2557495755310811754::1693319150::1697128817::1::::<><>::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
@@ -342,7 +343,7 @@ TextBubble.tscn::PackedScene::7980779173428697354::1693319150::0::1::::<><>::res
 event_end.gd::GDScript::-1::1693319150::0::1::::DialogicEndTimelineEvent<>DialogicEvent<>::
 icon.png::CompressedTexture2D::6076849027047342294::1693319150::1693319150::1::::<><>::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
-::res://addons/dialogic/Modules/Glossary/::1697086242
+::res://addons/dialogic/Modules/Glossary/::1697128817
 add-glossary.svg::CompressedTexture2D::5081683421271977615::1693319150::1697128817::1::::<><>::
 event_glossary.gd::GDScript::-1::1693319150::0::1::::DialogicGlossaryEvent<>DialogicEvent<>::
 glossary_editor.gd::GDScript::-1::1693319150::0::1::::<>DialogicEditor<>::
@@ -351,7 +352,7 @@ glossary_resource.gd::GDScript::-1::1693319150::0::1::::DialogicGlossary<>Resour
 icon.svg::CompressedTexture2D::4540926883099757451::1693319150::1697128817::1::::<><>::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
 subsystem_glossary.gd::GDScript::-1::1693319150::0::1::::<>DialogicSubsystem<>::
-::res://addons/dialogic/Modules/History/::1697086242
+::res://addons/dialogic/Modules/History/::1697128817
 definition.svg::CompressedTexture2D::7977914867733989258::1693319150::1697128817::1::::<><>::
 event_history.gd::GDScript::-1::1693319150::0::1::::DialogicHistoryEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::1853570986969252340::1693319150::1697128817::1::::<><>::
@@ -359,7 +360,7 @@ index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
 settings_history.gd::GDScript::-1::1693319150::0::1::::<>DialogicSettingsPage<>::
 settings_history.tscn::PackedScene::4542659110630949498::1693319150::0::1::::<><>::res://addons/dialogic/Modules/History/settings_history.gd
 subsystem_history.gd::GDScript::-1::1693319150::0::1::::<>DialogicSubsystem<>::
-::res://addons/dialogic/Modules/Jump/::1697086242
+::res://addons/dialogic/Modules/Jump/::1697128817
 event_jump.gd::GDScript::-1::1693319150::0::1::::DialogicJumpEvent<>DialogicEvent<>::
 event_label.gd::GDScript::-1::1693319150::0::1::::DialogicLabelEvent<>DialogicEvent<>::
 event_return.gd::GDScript::-1::1693319150::0::1::::DialogicReturnEvent<>DialogicEvent<>::
@@ -377,14 +378,14 @@ styles_icon.svg::CompressedTexture2D::1849808737952588208::1693319150::169331915
 layout_selection_page.gd::GDScript::-1::1693319150::0::1::::<>MarginContainer<>::
 StyleItem.gd::GDScript::-1::1693319150::0::1::::<>Container<>::
 StyleItem.tscn::PackedScene::7393949465201026258::1693319150::0::1::::<><>::res://addons/dialogic/Modules/LayoutEditor/Components/StyleItem.gd
-::res://addons/dialogic/Modules/Save/::1697086242
+::res://addons/dialogic/Modules/Save/::1697128817
 event_save.gd::GDScript::-1::1693319150::0::1::::DialogicSaveEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::9161839171657716917::1693319150::1697128817::1::::<><>::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
 settings_save.gd::GDScript::-1::1693319150::0::1::::<>DialogicSettingsPage<>::
 settings_save.tscn::PackedScene::5043017118059958494::1693319150::0::1::::<><>::res://addons/dialogic/Modules/Save/settings_save.gd<>uid://dbpkta2tjsqim
 subsystem_save.gd::GDScript::-1::1693319150::0::1::::<>DialogicSubsystem<>::
-::res://addons/dialogic/Modules/Settings/::1697086242
+::res://addons/dialogic/Modules/Settings/::1697128817
 event_setting.gd::GDScript::-1::1693319150::0::1::::DialogicSettingEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::5623309547840460913::1693319150::1697128817::1::::<><>::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
@@ -401,7 +402,7 @@ icon.png::CompressedTexture2D::5716795925671324642::1693319150::1693319150::1:::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
 node_style.gd::GDScript::-1::1693319150::0::1::::DialogicNode_StyleLayer<>Control<>::
 subsystem_styles.gd::GDScript::-1::1693319150::0::1::::<>DialogicSubsystem<>::
-::res://addons/dialogic/Modules/Text/::1697086242
+::res://addons/dialogic/Modules/Text/::1697128817
 default_input_handler.gd::GDScript::-1::1693319150::0::1::::<>Node<>::
 event_text.gd::GDScript::-1::1693319150::0::1::::DialogicTextEvent<>DialogicEvent<>::
 icon.png::CompressedTexture2D::1142529960942566062::1693319150::1693319150::1::::<><>::
@@ -425,7 +426,7 @@ icon.png::CompressedTexture2D::8941053882979023594::1693319150::1693319150::1:::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
 node_text_input.gd::GDScript::-1::1693319150::0::1::::DialogicNode_TextInput<>Control<>::
 subsystem_text_input.gd::GDScript::-1::1693319150::0::1::::<>DialogicSubsystem<>::
-::res://addons/dialogic/Modules/Variable/::1697086242
+::res://addons/dialogic/Modules/Variable/::1697128817
 add-variable.svg::CompressedTexture2D::1138705662028104178::1693319150::1697128817::1::::<><>::
 event_variable.gd::GDScript::-1::1693319150::0::1::::DialogicVariableEvent<>DialogicEvent<>::
 icon.png::CompressedTexture2D::1655383244634406440::1693319150::1693319150::1::::<><>::
@@ -450,7 +451,7 @@ subsystem_voice.gd::GDScript::-1::1693319150::0::1::::<>DialogicSubsystem<>::
 event_wait.gd::GDScript::-1::1693319150::0::1::::DialogicWaitEvent<>DialogicEvent<>::
 icon.png::CompressedTexture2D::4187748383665386802::1693319150::1697045622::1::::<><>::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
-::res://addons/dialogic/Modules/WaitInput/::1697086242
+::res://addons/dialogic/Modules/WaitInput/::1697128817
 event_wait_input.gd::GDScript::-1::1693319150::0::1::::DialogicWaitInputEvent<>DialogicEvent<>::
 icon.svg::CompressedTexture2D::2766149336681406939::1693319150::1697128817::1::::<><>::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
@@ -467,15 +468,18 @@ event.gd::GDScript::-1::1693319150::0::1::::DialogicEvent<>Resource<>::
 timeline.gd::GDScript::-1::1693319150::0::1::::DialogicTimeline<>Resource<>::
 TimelineResourceLoader.gd::GDScript::-1::1693319150::0::1::::DialogicTimelineFormatLoader<>ResourceFormatLoader<>::
 TimelineResourceSaver.gd::GDScript::-1::1693319150::0::1::::DialogicTimelineFormatSaver<>ResourceFormatSaver<>::
-::res://Game Objects/::1697128795
-Fire.tscn::PackedScene::5286215549189667297::1697128795::0::1::::<><>::uid://di7tmbo7w6n0m
-Heart.tscn::PackedScene::2135903612392368692::1697128795::0::1::::<><>::uid://dc33of3ndrguy<>uid://be20jsnrvji78
+::res://Game Objects/::1697134639
+Fire.tscn::PackedScene::5286215549189667297::1697134498::0::1::::<><>::uid://di7tmbo7w6n0m
+Heart.tscn::PackedScene::2135903612392368692::1697134498::0::1::::<><>::res://Game Objects/Heart.gd<>uid://dc33of3ndrguy<>uid://be20jsnrvji78
 Player.gd::GDScript::-1::1684971234::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::8249921315647150233::1697086044::0::1::::<><>::res://Game Objects/Player.gd<>uid://daqagidjpsmge
+Player.tscn::PackedScene::8249921315647150233::1697134498::0::1::::<><>::res://Game Objects/Player.gd<>uid://of1bdcssoil8
 Portal.gd::GDScript::-1::1697085817::0::1::::<>Area2D<>::
-Portal.tscn::PackedScene::3651041133561462774::1697086044::0::1::::<><>::res://Game Objects/Portal.gd<>uid://bpgltcwpxv3wy
-TopDownPlayer.gd::GDScript::-1::1697047605::0::1::::<>CharacterBody2D<>::
-TopDownPlayer.tscn::PackedScene::2101326177358152094::1697086044::0::1::::<><>::res://Game Objects/TopDownPlayer.gd<>uid://dx63ovr8j8lqv
+Portal.tscn::PackedScene::3651041133561462774::1697134498::0::1::::<><>::res://Game Objects/Portal.gd<>uid://bpgltcwpxv3wy
+Heart.gd::GDScript::-1::1697134494::0::1::::<>Area2D<>::
+Area2D.gd::GDScript::-1::1697132855::0::1::::<>Area2D<>::
+events.gd::GDScript::-1::1697134639::0::1::::<>Node<>::
+TopDownPlayer.gd::GDScript::-1::1697133234::0::1::::<>CharacterBody2D<>::
+TopDownPlayer.tscn::PackedScene::2101326177358152094::1697134498::0::1::::<><>::res://Game Objects/TopDownPlayer.gd<>uid://of1bdcssoil8<>res://Game Objects/Area2D.gd
 ::res://gameArt/::1697128795
 demonset.png::CompressedTexture2D::351201978100713948::1697085817::1697044856::1::::<><>::
 firesheet.png::CompressedTexture2D::7788008016338075882::1697128795::1697128795::1::::<><>::
@@ -516,11 +520,11 @@ demon_topdown1.png::CompressedTexture2D::5314066408903167976::1696973895::169697
 demon_topdown2.png::CompressedTexture2D::1735876588752612726::1696973895::1696973930::1::::<><>::
 demon_topdown3.png::CompressedTexture2D::1311340670247287517::1696973895::1696973930::1::::<><>::
 demon_topdown4.png::CompressedTexture2D::7149777474751507228::1696973895::1696973930::1::::<><>::
-::res://Levels/::1697128795
-level_0.tscn::PackedScene::6505494209966894085::1697086044::0::1::::<><>::uid://faeilsasv6ts<>uid://dpsk87sqm2jr2<>uid://bsaud43p0c8ow
-level_1.tscn::PackedScene::4809376463474503779::1697128795::0::1::::<><>::uid://faeilsasv6ts<>uid://465sgu5fdw2i<>uid://bsaud43p0c8ow<>uid://dx3qagqn03bra<>uid://chkxgyvemm7d2<>uid://5owaxvijgfa7
-level_2.tscn::PackedScene::1952392134939132925::1697128795::0::1::::<><>::uid://465sgu5fdw2i<>uid://bsaud43p0c8ow<>uid://chkxgyvemm7d2<>uid://faeilsasv6ts<>uid://dx3qagqn03bra<>uid://5owaxvijgfa7
-level_3.tscn::PackedScene::2517014173745417241::1697128795::0::1::::<><>::uid://bcouynx6ycqcj
+::res://Levels/::1697134498
+level_0.tscn::PackedScene::6505494209966894085::1697134498::0::1::::<><>::uid://faeilsasv6ts<>uid://dpsk87sqm2jr2<>uid://bsaud43p0c8ow
+level_1.tscn::PackedScene::4809376463474503779::1697134498::0::1::::<><>::uid://faeilsasv6ts<>uid://465sgu5fdw2i<>uid://bsaud43p0c8ow<>uid://dx3qagqn03bra<>uid://chkxgyvemm7d2
+level_2.tscn::PackedScene::1952392134939132925::1697134498::0::1::::<><>::uid://465sgu5fdw2i<>uid://bsaud43p0c8ow<>uid://chkxgyvemm7d2<>uid://faeilsasv6ts<>uid://dx3qagqn03bra<>uid://5owaxvijgfa7
+level_3.tscn::PackedScene::2517014173745417241::1697134498::0::1::::<><>::uid://bcouynx6ycqcj
 ::res://vn_stuff/::1697085816
 ::res://vn_stuff/characters/::1697085959
 fraud_demon.dch::Resource::-1::1697085959::0::1::::<><>::
