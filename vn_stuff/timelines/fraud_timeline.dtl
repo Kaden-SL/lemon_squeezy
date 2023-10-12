@@ -1,6 +1,17 @@
 [background arg="res://gameArt/fraud_bg_placeholder.jpg" fade="0.0"]
-Join fraud_demon 2
-fraud_demon (neutral_talk_1): testing, testing
-Update fraud_demon 30 [ move_time="3"]
+Join MC 2
+MC: Mm, that landing could have been smoother
+MC: Let's see. This one would be...fraud. Right
+MC (talk_1): Best to avoid its residents, since they’re either devious...or desperate. However...
+MC (talk_1): They’re not worth the effort. And frankly, I’d rather not get mixed up in an unrelated mess. 
+MC (neutral): Now then, where’s the sharks?
+Leave MC
+Join fraud_demon 3
+[wait time="3.0"]
+Leave fraud_demon
+Join MC 2
 Join MC 1 [ mirrored="true"]
+MC: And that would do it. Well, no time like the present. Er, afterlife.
+Update MC 2
+Join fraud_demon 3
 MC: kachow
