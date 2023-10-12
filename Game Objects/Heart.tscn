@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://5owaxvijgfa7"]
+
+[ext_resource type="Texture2D" uid="uid://dc33of3ndrguy" path="res://gameArt/heart_sprite_1.png" id="1_k1uof"]
+[ext_resource type="Texture2D" uid="uid://be20jsnrvji78" path="res://gameArt/heart_sprite_2.png" id="2_e8bah"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jumpu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_k1uof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_e8bah")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Heart" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jumpu")
+frame_progress = 0.354458

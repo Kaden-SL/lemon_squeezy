@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bb4i4dgqlqd0l"]
+
+[ext_resource type="Texture2D" uid="uid://bcouynx6ycqcj" path="res://gameArt/game_over_placeholder.jpg" id="1_mp03y"]
+
+[node name="temp_end" type="Node2D"]
+
+[node name="GameOverPlaceholder" type="Sprite2D" parent="."]
+position = Vector2(580, 383)
+texture = ExtResource("1_mp03y")

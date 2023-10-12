@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://chkxgyvemm7d2"]
+
+[ext_resource type="Texture2D" uid="uid://di7tmbo7w6n0m" path="res://gameArt/firesheet.png" id="1_66g5s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8kaxq"]
+atlas = ExtResource("1_66g5s")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ef3ed"]
+atlas = ExtResource("1_66g5s")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6h0s"]
+atlas = ExtResource("1_66g5s")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sts8a"]
+atlas = ExtResource("1_66g5s")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01hnv"]
+atlas = ExtResource("1_66g5s")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_opunl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8kaxq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ef3ed")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o6h0s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sts8a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01hnv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Fire" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_opunl")
+frame_progress = 0.296334
