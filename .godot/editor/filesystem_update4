@@ -1,15 +1,12 @@
-res://Game Objects/TopDownPlayer.tscn
-res://map.tscn
 res://Game Objects/Player.tscn
+res://vn_stuff/characters/fraud_demon.dch
+res://vn_stuff/characters/MC.dch
+res://Game Objects/TopDownPlayer.tscn
 res://Game Objects/Fire.tscn
 res://Game Objects/Heart.tscn
 res://Levels/level_0.tscn
 res://Levels/level_1.tscn
 res://Levels/level_2.tscn
 res://Levels/level_3.tscn
-res://Game Objects/TopDownPlayer.gd
-res://Game Objects/Heart.gd
 res://Game Objects/Portal.tscn
-res://Game Objects/Area2D.gd
-res://heart2.tscn
 res://gui.tscn
