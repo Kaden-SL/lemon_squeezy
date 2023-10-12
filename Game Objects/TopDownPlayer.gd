@@ -1,9 +1,25 @@
 extends CharacterBody2D
 
-var speed = 400  # speed in pixels/sec
+@export var speed = 200  # speed in pixels/sec
+var counter : int = 0
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
-
 	move_and_slide()
+#	handleCollision()
+
+#
+#func handleCollision():
+#	for i in get_slide_collision_count():
+#		var collision = get_slide_collision(i)
+#		var collider = collision.get_collider()
+#		print_debug(collider.name)
+
+
+
+
+func _on_area_2d_body_entered(body):
+	if body.is_in_group("Heart"):
+		print('heartreg')
+

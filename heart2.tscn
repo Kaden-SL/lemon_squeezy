@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://u6a5vkg4umrn"]
+
+[ext_resource type="Texture2D" uid="uid://dc33of3ndrguy" path="res://gameArt/heart_sprite_1.png" id="1_2eeyr"]
+[ext_resource type="Texture2D" uid="uid://be20jsnrvji78" path="res://gameArt/heart_sprite_2.png" id="2_m2tbb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ojjhs"]
+size = Vector2(26, 29)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_upsr4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2eeyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_m2tbb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+z_index = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -0.5)
+shape = SubResource("RectangleShape2D_ojjhs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_upsr4")

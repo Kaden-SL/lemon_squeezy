@@ -1,16 +1,16 @@
 [gd_scene load_steps=5 format=3 uid="uid://dpsk87sqm2jr2"]
 
 [ext_resource type="Script" path="res://Game Objects/Player.gd" id="1_cj7c2"]
-[ext_resource type="Texture2D" uid="uid://daqagidjpsmge" path="res://gameArt/Fox.png" id="2_p77n8"]
+[ext_resource type="Texture2D" uid="uid://of1bdcssoil8" path="res://gameArt/topdown_playersprite.png" id="2_jm74j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mgcc"]
-size = Vector2(10, 11)
+size = Vector2(22, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8wifw"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_p77n8")
+"texture": ExtResource("2_jm74j")
 }],
 "loop": true,
 "name": &"Still",
@@ -24,7 +24,7 @@ script = ExtResource("1_cj7c2")
 zoom = Vector2(3, 3)
 
 [node name="Collision" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2.5)
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_7mgcc")
 
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="."]

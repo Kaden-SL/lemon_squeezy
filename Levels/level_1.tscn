@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://carxy0hkwunbn"]
+[gd_scene load_steps=8 format=3 uid="uid://carxy0hkwunbn"]
 
 [ext_resource type="Texture2D" uid="uid://faeilsasv6ts" path="res://gameArt/demonset.png" id="1_jjnsn"]
 [ext_resource type="PackedScene" uid="uid://465sgu5fdw2i" path="res://Game Objects/TopDownPlayer.tscn" id="2_jru1y"]
 [ext_resource type="PackedScene" uid="uid://bsaud43p0c8ow" path="res://Game Objects/Portal.tscn" id="3_1peew"]
 [ext_resource type="Texture2D" uid="uid://dx3qagqn03bra" path="res://gameArt/lust_bg_placeholder.jpg" id="5_ekry6"]
 [ext_resource type="PackedScene" uid="uid://chkxgyvemm7d2" path="res://Game Objects/Fire.tscn" id="5_ti6i7"]
-[ext_resource type="PackedScene" uid="uid://5owaxvijgfa7" path="res://Game Objects/Heart.tscn" id="6_msnit"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vabf4"]
 texture = ExtResource("1_jjnsn")
@@ -386,9 +385,6 @@ texture = ExtResource("5_ekry6")
 
 [node name="Fire" parent="." instance=ExtResource("5_ti6i7")]
 position = Vector2(55, 49)
-
-[node name="Heart" parent="." instance=ExtResource("6_msnit")]
-position = Vector2(190, -15)
 
 [node name="Portal" parent="." instance=ExtResource("3_1peew")]
 position = Vector2(-37, -79)
