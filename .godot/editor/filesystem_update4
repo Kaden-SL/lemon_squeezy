@@ -1,2 +1,7 @@
-res://vn_stuff/characters/fraud_demon.dch
-res://vn_stuff/fraud.tscn
+res://Levels/level_2.tscn
+res://map.tscn
+res://Game Objects/Player.tscn
+res://Game Objects/TopDownPlayer.tscn
+res://Game Objects/Portal.tscn
+res://Levels/level_0.tscn
+res://Levels/level_1.tscn

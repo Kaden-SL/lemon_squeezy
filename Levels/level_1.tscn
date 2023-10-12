@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://carxy0hkwunbn"]
+[gd_scene load_steps=6 format=3 uid="uid://carxy0hkwunbn"]
 
 [ext_resource type="Texture2D" uid="uid://faeilsasv6ts" path="res://gameArt/demonset.png" id="1_jjnsn"]
 [ext_resource type="PackedScene" uid="uid://465sgu5fdw2i" path="res://Game Objects/TopDownPlayer.tscn" id="2_jru1y"]
+[ext_resource type="PackedScene" uid="uid://bsaud43p0c8ow" path="res://Game Objects/Portal.tscn" id="3_1peew"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rjkqn"]
 texture = ExtResource("1_jjnsn")
@@ -467,3 +468,6 @@ format = 2
 layer_0/tile_data = PackedInt32Array(196604, 720896, 8, 196605, 720896, 8, 196606, 720896, 8, 196607, 720896, 8, 131072, 720896, 8, 131073, 720896, 8, 131074, 720896, 8, 131075, 720896, 8)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_jru1y")]
+
+[node name="Portal" parent="." instance=ExtResource("3_1peew")]
+position = Vector2(99, 0)
