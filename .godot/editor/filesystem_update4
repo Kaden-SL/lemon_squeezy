@@ -17,3 +17,5 @@ res://Levels/level_1.gd
 res://Game Objects/Events.gd
 res://Game Objects/Player/Player.tscn
 res://Game Objects/Player/TopDownPlayer.tscn
+res://Game Objects/GUI/heartmeter.tscn
+res://Game Objects/GUI/gui.tscn

@@ -1,6 +1,6 @@
-Node
-TextureProgressBar
 CanvasLayer
+TextureProgressBar
+Node
 Label
 TextureRect
 MarginContainer
