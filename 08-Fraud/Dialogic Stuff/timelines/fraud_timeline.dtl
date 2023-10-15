@@ -22,7 +22,7 @@ fraud_demon (neutral_talk_3): Although…you seem rather exhausted, now that I g
 fraud_demon (neutral_talk_2): So here, a token of our meeting. Eating this will give you all the energy you could ever need.
 - Eat what it offers.
 	Leave --All--
-	[background arg="res://gameArt/game_over_placeholder.jpg" fade="0.0"]
+	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="0.0"]
 	[wait time="15.0"]
 	[end_timeline]
 - Pretend to eat what it offers.
@@ -35,7 +35,7 @@ fraud_demon (neutral_talk_2): I’ve…we’ll say…have connections with many 
 The floating masks of varying expressions revolve around the demon, seeming to dance with its laughter.
 - Pick one of the faces.
 	Leave --All--
-	[background arg="res://gameArt/game_over_placeholder.jpg" fade="0.0"]
+	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="0.0"]
 	[wait time="15.0"]
 	[end_timeline]
 - …I’m not sure I want to be any of these souls.
@@ -61,7 +61,7 @@ MC (neutral): It wasn’t quite what I was expecting, but I’ll take it nonethe
 fraud_demon (neutral_talk_1): Good, good.
 - Shake hands.
 	Leave --All--
-	[background arg="res://gameArt/game_over_placeholder.jpg" fade="0.0"]
+	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="0.0"]
 	[wait time="15.0"]
 	[end_timeline]
 - Shake hands with candy in hand.
