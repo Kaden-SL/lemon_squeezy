@@ -22,6 +22,15 @@ fraud_demon (neutral_talk_3): Although…you seem rather exhausted, now that I g
 fraud_demon (neutral_talk_2): So here, a token of our meeting. Eating this will give you all the energy you could ever need.
 - Eat what it offers.
 	Leave --All--
+	MC: I popped the mysterious food into my mouth. It tasted.... like nothing.
+	MC: Huh?
+	MC: My vision... is...
+	MC: fading...
+	[background arg="res://08-Fraud/Art Assets/eat_ending.jpg" fade="0.0"]
+	MC: !!!
+	MC: Is that, me??
+	A chilling laugh filled the space.
+	fraud_demon: Welcome to the family...
 	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="0.0"]
 	[wait time="15.0"]
 	[end_timeline]
@@ -35,6 +44,8 @@ fraud_demon (neutral_talk_2): I’ve…we’ll say…have connections with many 
 The floating masks of varying expressions revolve around the demon, seeming to dance with its laughter.
 - Pick one of the faces.
 	Leave --All--
+	[background arg="res://08-Fraud/Art Assets/pick_face_ending.jpg" fade="0.0"]
+	fraud_demon: Welcome to the family...
 	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="0.0"]
 	[wait time="15.0"]
 	[end_timeline]
@@ -61,6 +72,11 @@ MC (neutral): It wasn’t quite what I was expecting, but I’ll take it nonethe
 fraud_demon (neutral_talk_1): Good, good.
 - Shake hands.
 	Leave --All--
+	[background arg="res://08-Fraud/Art Assets/fraud_bg_placeholder.jpg" fade="0.0"]
+	MC: I reached out my hand, but instead of feeling another hand around my own, I felt it around my entire body.
+	[background arg="res://08-Fraud/Art Assets/shake_hands_ending.jpg" fade="0.0"]
+	fraud_demon: I've caught you...
+	The demon opened it's mouth wide, revealing an endless, crimson abyss, before throwing MC into its mouth and swallowing him up, putting an end to his journey.
 	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="0.0"]
 	[wait time="15.0"]
 	[end_timeline]
