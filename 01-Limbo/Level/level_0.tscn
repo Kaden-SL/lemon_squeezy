@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cyxksljxbdxgv"]
+[gd_scene load_steps=7 format=3 uid="uid://cyxksljxbdxgv"]
 
 [ext_resource type="Texture2D" uid="uid://faeilsasv6ts" path="res://00-All Levels/Art Assets/demonset.png" id="1_slstl"]
 [ext_resource type="PackedScene" uid="uid://cr6vnfwltxt42" path="res://00-All Levels/Player/Player.tscn" id="2_fgymf"]
 [ext_resource type="PackedScene" uid="uid://bsaud43p0c8ow" path="res://00-All Levels/Objects/Portal.tscn" id="3_avj7r"]
+[ext_resource type="Texture2D" uid="uid://bpgltcwpxv3wy" path="res://00-All Levels/Art Assets/portal.png" id="4_3is3r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eyfrt"]
 texture = ExtResource("1_slstl")
@@ -369,13 +370,21 @@ sources/3 = SubResource("TileSetAtlasSource_eyfrt")
 position = Vector2(534, 335)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_fgymf")]
-position = Vector2(-75, -13)
+position = Vector2(27, 13)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-21, 34)
 tile_set = SubResource("TileSet_xvik0")
 format = 2
-layer_0/tile_data = PackedInt32Array(4, 327683, 7, 3, 327683, 7, 2, 327683, 7, 1, 327683, 7, 0, 327683, 7, 65535, 327683, 7, 65534, 327683, 7, 65533, 327683, 7, -3, 327683, 7, -65539, 327683, 7, -131075, 327683, 7, -196611, 327683, 7, -196610, 327683, 7, -196609, 327683, 7, -262144, 327683, 7, -262143, 327683, 7, -262142, 327683, 7, -262141, 327683, 7, -262140, 327683, 7, -196604, 327683, 7, -131068, 327683, 7, -65532, 327683, 7)
+layer_0/tile_data = PackedInt32Array(2, 327683, 7, 1, 327683, 7, 0, 327683, 7)
 
 [node name="Portal" parent="." instance=ExtResource("3_avj7r")]
-position = Vector2(91, -12)
+position = Vector2(26, 1065)
+rotation = 1.5708
+scale = Vector2(5, 20)
+
+[node name="Portal2" type="Sprite2D" parent="."]
+position = Vector2(33, 1010)
+rotation = 1.5708
+scale = Vector2(20, 20)
+texture = ExtResource("4_3is3r")
