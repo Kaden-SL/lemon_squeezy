@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://220u341pwtib"]
+[gd_scene load_steps=9 format=3 uid="uid://220u341pwtib"]
 
 [ext_resource type="Texture2D" uid="uid://dx3qagqn03bra" path="res://02-Lust/Art Assets/lust_bg_placeholder.jpg" id="1_wtrbo"]
 [ext_resource type="PackedScene" uid="uid://chkxgyvemm7d2" path="res://02-Lust/Objects/Fire.tscn" id="5_dgs0h"]
 [ext_resource type="Texture2D" uid="uid://faeilsasv6ts" path="res://00-All Levels/Art Assets/demonset.png" id="5_jrmyf"]
+[ext_resource type="PackedScene" uid="uid://l3oq5g7n0uvg" path="res://02-Lust/Player/TopDownPlayer.tscn" id="5_ts3ho"]
+[ext_resource type="PackedScene" uid="uid://bsaud43p0c8ow" path="res://00-All Levels/Objects/Portal.tscn" id="6_cpg36"]
 [ext_resource type="PackedScene" uid="uid://xg66dkypxfef" path="res://02-Lust/Objects/Heart.tscn" id="6_qu8au"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hwclp"]
@@ -368,6 +370,8 @@ sources/1 = SubResource("TileSetAtlasSource_hwclp")
 
 [node name="Node2D" type="Node2D"]
 
+[node name="TopDownPlayer" parent="." instance=ExtResource("5_ts3ho")]
+
 [node name="LustBgPlaceholder" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(-28, 0)
@@ -408,11 +412,19 @@ position = Vector2(415, -236)
 [node name="Fire10" parent="." instance=ExtResource("5_dgs0h")]
 position = Vector2(440, -236)
 
-[node name="Heart" parent="." instance=ExtResource("6_qu8au")]
-position = Vector2(212, -11)
+[node name="Hearts" type="Node" parent="."]
 
-[node name="Heart2" parent="." instance=ExtResource("6_qu8au")]
-position = Vector2(333, -153)
+[node name="Heart" parent="Hearts" instance=ExtResource("6_qu8au")]
+position = Vector2(95, -12)
 
-[node name="Heart3" parent="." instance=ExtResource("6_qu8au")]
-position = Vector2(466, -306)
+[node name="Heart2" parent="Hearts" instance=ExtResource("6_qu8au")]
+position = Vector2(306, -152)
+
+[node name="Heart3" parent="Hearts" instance=ExtResource("6_qu8au")]
+position = Vector2(385, -285)
+
+[node name="Heart4" parent="Hearts" instance=ExtResource("6_qu8au")]
+position = Vector2(528, -306)
+
+[node name="Portal" parent="." instance=ExtResource("6_cpg36")]
+position = Vector2(209, 0)
