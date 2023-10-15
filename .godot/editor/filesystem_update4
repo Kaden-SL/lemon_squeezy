@@ -20,3 +20,4 @@ res://Game Objects/Player/TopDownPlayer.tscn
 res://Game Objects/GUI/heartmeter.tscn
 res://Game Objects/GUI/gui.tscn
 res://Game Objects/Player/TopDownPlayer.gd
+res://Game Objects/Fire.gd
