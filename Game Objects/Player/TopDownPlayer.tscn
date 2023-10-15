@@ -1,14 +1,14 @@
 [gd_scene load_steps=7 format=3 uid="uid://465sgu5fdw2i"]
 
-[ext_resource type="Script" path="res://Game Objects/TopDownPlayer.gd" id="1_jlucd"]
-[ext_resource type="Texture2D" uid="uid://of1bdcssoil8" path="res://gameArt/topdown_playersprite.png" id="2_ui1kx"]
-[ext_resource type="Script" path="res://Game Objects/Area2D.gd" id="3_sstey"]
+[ext_resource type="Script" path="res://Game Objects/Player/TopDownPlayer.gd" id="1_5v386"]
+[ext_resource type="Texture2D" uid="uid://of1bdcssoil8" path="res://gameArt/topdown_playersprite.png" id="2_eku2j"]
+[ext_resource type="Script" path="res://Game Objects/Area2D.gd" id="3_4v0l2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8wifw"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_ui1kx")
+"texture": ExtResource("2_eku2j")
 }],
 "loop": true,
 "name": &"Still",
@@ -23,7 +23,7 @@ size = Vector2(20, 28)
 
 [node name="CharacterBody2D" type="CharacterBody2D" groups=["Player"]]
 collision_layer = 2
-script = ExtResource("1_jlucd")
+script = ExtResource("1_5v386")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
@@ -33,7 +33,7 @@ sprite_frames = SubResource("SpriteFrames_8wifw")
 animation = &"Still"
 
 [node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("3_sstey")
+script = ExtResource("3_4v0l2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-0.5, 0)

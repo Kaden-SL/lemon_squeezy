@@ -1,7 +1,5 @@
-[gd_scene load_steps=9 format=3 uid="uid://220u341pwtib"]
+[gd_scene load_steps=7 format=3 uid="uid://220u341pwtib"]
 
-[ext_resource type="PackedScene" uid="uid://465sgu5fdw2i" path="res://Game Objects/TopDownPlayer.tscn" id="1_c1fhv"]
-[ext_resource type="PackedScene" uid="uid://bsaud43p0c8ow" path="res://Game Objects/Portal.tscn" id="2_wa4xg"]
 [ext_resource type="PackedScene" uid="uid://chkxgyvemm7d2" path="res://Game Objects/Fire.tscn" id="5_dgs0h"]
 [ext_resource type="Texture2D" uid="uid://faeilsasv6ts" path="res://gameArt/demonset.png" id="5_jrmyf"]
 [ext_resource type="Texture2D" uid="uid://dx3qagqn03bra" path="res://gameArt/lust_bg_placeholder.jpg" id="6_mlnvv"]
@@ -369,11 +367,6 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_hwclp")
 
 [node name="Node2D" type="Node2D"]
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_c1fhv")]
-
-[node name="Portal" parent="." instance=ExtResource("2_wa4xg")]
-position = Vector2(727, -308)
 
 [node name="LustBgPlaceholder" type="Sprite2D" parent="."]
 z_index = -1

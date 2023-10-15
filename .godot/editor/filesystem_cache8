@@ -1,10 +1,6 @@
 2a60927148abd1d33b818b535e306557
-::res://::1697329763
-game_ui.tscn::PackedScene::-1::1693319150::0::1::::<><>::res://addons/dialogic/Modules/Background/node_background_holder.gd<>res://addons/dialogic/Modules/Text/node_dialog_text.gd<>res://addons/dialogic/Modules/Choice/node_choice_button.gd<>res://addons/dialogic/Modules/Text/node_next_indicator.gd<>uid://bvqgwmds7enrv<>res://addons/dialogic/Modules/Text/node_name_label.gd
-gui.tscn::PackedScene::6733150312635531512::1697329606::0::1::::<><>::
-heart2.tscn::PackedScene::1467827275704211631::1697329735::0::1::::<><>::uid://dc33of3ndrguy<>uid://be20jsnrvji78
+::res://::1697330810
 icon.svg::CompressedTexture2D::3604967623761785578::1684971234::1697233420::1::::<><>::
-map.tscn::PackedScene::1639134538609314474::1697130791::0::1::::<><>::uid://cexpgp51nbv2o<>uid://dpsk87sqm2jr2
 README.md::TextFile::-1::1697059626::0::1::::<><>::
 ::res://addons/::1693319150
 ::res://addons/dialogic/::1693319150
@@ -469,20 +465,23 @@ event.gd::GDScript::-1::1693319150::0::1::::DialogicEvent<>Resource<>::
 timeline.gd::GDScript::-1::1693319150::0::1::::DialogicTimeline<>Resource<>::
 TimelineResourceLoader.gd::GDScript::-1::1693319150::0::1::::DialogicTimelineFormatLoader<>ResourceFormatLoader<>::
 TimelineResourceSaver.gd::GDScript::-1::1693319150::0::1::::DialogicTimelineFormatSaver<>ResourceFormatSaver<>::
-::res://Game Objects/::1697329760
+::res://Game Objects/::1697330810
 Area2D.gd::GDScript::-1::1697132855::0::1::::<>Area2D<>::
-Events.gd::GDScript::-1::1697134639::0::1::::<>Node<>::
-Fire.tscn::PackedScene::5286215549189667297::1697329735::0::1::::<><>::uid://di7tmbo7w6n0m
-Heart.gd::GDScript::-1::1697135072::0::1::::<>Area2D<>::
-Heart.tscn::PackedScene::2135903612392368692::1697329735::0::1::::<><>::res://Game Objects/Heart.gd<>uid://dc33of3ndrguy<>uid://be20jsnrvji78
+Events.gd::GDScript::-1::1697330724::0::1::::<>Node<>::
+Fire.tscn::PackedScene::5286215549189667297::1697330417::0::1::::<><>::uid://di7tmbo7w6n0m
+Heart.gd::GDScript::-1::1697330742::0::1::::<>Area2D<>::
+Heart.tscn::PackedScene::2135903612392368692::1697330669::0::1::::<><>::res://Game Objects/Heart.gd<>uid://dc33of3ndrguy<>uid://be20jsnrvji78
 Player.gd::GDScript::-1::1684971234::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::8249921315647150233::1697329735::0::1::::<><>::res://Game Objects/Player.gd<>uid://of1bdcssoil8
+Player.tscn::PackedScene::8249921315647150233::1697330669::0::1::::<><>::res://Game Objects/Player.gd<>uid://of1bdcssoil8
 Portal.gd::GDScript::-1::1697085817::0::1::::<>Area2D<>::
-Portal.tscn::PackedScene::3651041133561462774::1697329735::0::1::::<><>::res://Game Objects/Portal.gd<>uid://bpgltcwpxv3wy
+Portal.tscn::PackedScene::3651041133561462774::1697330418::0::1::::<><>::res://Game Objects/Portal.gd<>uid://bpgltcwpxv3wy
+::res://Game Objects/GUI/::1697330418
+gui.tscn::PackedScene::6733150312635531512::1697329606::0::1::::<><>::
+heartmeter2.tscn::PackedScene::9071993290784622510::1697330418::0::1::::<><>::uid://bw7xf3po67nqf<>uid://ckg6fggy2moeb
+::res://Game Objects/Player/::1697330810
+Player.tscn::PackedScene::8249921315647150233::1697330814::0::1::::<><>::res://Game Objects/Player.gd<>uid://of1bdcssoil8
 TopDownPlayer.gd::GDScript::-1::1697133234::0::1::::<>CharacterBody2D<>::
-TopDownPlayer.tscn::PackedScene::2101326177358152094::1697329735::0::1::::<><>::res://Game Objects/TopDownPlayer.gd<>uid://of1bdcssoil8<>res://Game Objects/Area2D.gd
-::res://Game Objects/GUI/::1697329763
-heartmeter2.tscn::PackedScene::9071993290784622510::1697329735::0::1::::<><>::uid://bw7xf3po67nqf<>uid://ckg6fggy2moeb
+TopDownPlayer.tscn::PackedScene::2101326177358152094::1697330806::0::1::::<><>::res://Game Objects/Player/TopDownPlayer.gd<>uid://of1bdcssoil8<>res://Game Objects/Area2D.gd
 ::res://gameArt/::1697328048
 demonset.png::CompressedTexture2D::351201978100713948::1697085817::1697044856::1::::<><>::
 firesheet.png::CompressedTexture2D::7788008016338075882::1697128795::1697128795::1::::<><>::
@@ -541,11 +540,12 @@ demon_topdown1.png::CompressedTexture2D::5314066408903167976::1696973895::169697
 demon_topdown2.png::CompressedTexture2D::1735876588752612726::1696973895::1696973930::1::::<><>::
 demon_topdown3.png::CompressedTexture2D::1311340670247287517::1696973895::1696973930::1::::<><>::
 demon_topdown4.png::CompressedTexture2D::7149777474751507228::1696973895::1696973930::1::::<><>::
-::res://Levels/::1697329763
-level_0.tscn::PackedScene::6505494209966894085::1697329763::0::1::::<><>::uid://faeilsasv6ts<>uid://dpsk87sqm2jr2<>uid://bsaud43p0c8ow
-level_1.tscn::PackedScene::4809376463474503779::1697329735::0::1::::<><>::uid://faeilsasv6ts<>uid://465sgu5fdw2i<>uid://bsaud43p0c8ow<>uid://dx3qagqn03bra<>uid://chkxgyvemm7d2
-level_2.tscn::PackedScene::1952392134939132925::1697329735::0::1::::<><>::uid://465sgu5fdw2i<>uid://bsaud43p0c8ow<>uid://chkxgyvemm7d2<>uid://faeilsasv6ts<>uid://dx3qagqn03bra<>uid://5owaxvijgfa7
-level_3.tscn::PackedScene::2517014173745417241::1697329735::0::1::::<><>::uid://bcouynx6ycqcj
+::res://Levels/::1697330810
+level_0.tscn::PackedScene::6505494209966894085::1697330814::0::1::::<><>::uid://faeilsasv6ts<>uid://dpsk87sqm2jr2<>uid://bsaud43p0c8ow
+level_1.gd::GDScript::-1::1697330806::0::1::::<>Node2D<>::
+level_1.tscn::PackedScene::4809376463474503779::1697330810::0::1::::<><>::uid://faeilsasv6ts<>res://Levels/level_1.gd<>uid://465sgu5fdw2i<>uid://bsaud43p0c8ow<>uid://dx3qagqn03bra<>uid://chkxgyvemm7d2<>uid://d2isn0dl3a3oc<>uid://5owaxvijgfa7
+level_2.tscn::PackedScene::1952392134939132925::1697330810::0::1::::<><>::uid://465sgu5fdw2i<>uid://bsaud43p0c8ow<>uid://chkxgyvemm7d2<>uid://faeilsasv6ts<>uid://dx3qagqn03bra<>uid://5owaxvijgfa7
+level_3.tscn::PackedScene::2517014173745417241::1697330669::0::1::::<><>::uid://bcouynx6ycqcj
 ::res://vn_stuff/::1697085816
 ::res://vn_stuff/characters/::1697085959
 fraud_demon.dch::Resource::-1::1697085959::0::1::::<><>::

@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dpsk87sqm2jr2"]
 
-[ext_resource type="Script" path="res://Game Objects/Player.gd" id="1_cj7c2"]
-[ext_resource type="Texture2D" uid="uid://of1bdcssoil8" path="res://gameArt/topdown_playersprite.png" id="2_jm74j"]
+[ext_resource type="Script" path="res://Game Objects/Player/Player.gd" id="1_p4fr3"]
+[ext_resource type="Texture2D" uid="uid://of1bdcssoil8" path="res://gameArt/topdown_playersprite.png" id="2_5gj6q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mgcc"]
 size = Vector2(22, 32)
@@ -10,7 +10,7 @@ size = Vector2(22, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_jm74j")
+"texture": ExtResource("2_5gj6q")
 }],
 "loop": true,
 "name": &"Still",
@@ -18,7 +18,7 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D" groups=["Player"]]
-script = ExtResource("1_cj7c2")
+script = ExtResource("1_p4fr3")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)

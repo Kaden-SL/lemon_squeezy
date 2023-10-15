@@ -12,3 +12,8 @@ res://Game Objects/Portal.tscn
 res://heartmeter2.tscn
 res://heart2.tscn
 res://Game Objects/GUI/heartmeter2.tscn
+res://Game Objects/Heart.gd
+res://Levels/level_1.gd
+res://Game Objects/Events.gd
+res://Game Objects/Player/Player.tscn
+res://Game Objects/Player/TopDownPlayer.tscn

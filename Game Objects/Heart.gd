@@ -1,6 +1,5 @@
 extends Area2D
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -13,7 +12,9 @@ func _process(delta):
 
 func _on_body_entered(body):
 	queue_free()
+	Events.hearts_collected.emit()
 	var hearts=get_tree().get_nodes_in_group("Heart")
-	Events.
+	if hearts.size() == 1: 
+		Events.full_hearts.emit()
 	print(hearts.size())
 	
