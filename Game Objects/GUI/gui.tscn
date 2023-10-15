@@ -29,5 +29,8 @@ layout_mode = 2
 [node name="Number" type="Label" parent="HBoxContainer/Bars/Bar/Count"]
 layout_mode = 2
 
+[node name="TextureProgressBar" type="TextureProgressBar" parent="HBoxContainer/Bars/Bar"]
+layout_mode = 2
+
 [node name="Counters" type="HBoxContainer" parent="HBoxContainer"]
 layout_mode = 2

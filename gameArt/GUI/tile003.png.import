@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdiu8iseao6rb"
-path="res://.godot/imported/lustvial_spritesheet.png-ed67acbe03a327ebebece69bfd615c6c.ctex"
+uid="uid://dy7gicp2r1i0g"
+path="res://.godot/imported/tile003.png-22b0bd0aa973891a75c8e209b58e1886.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gameArt/lustvial_spritesheet.png"
-dest_files=["res://.godot/imported/lustvial_spritesheet.png-ed67acbe03a327ebebece69bfd615c6c.ctex"]
+source_file="res://gameArt/GUI/tile003.png"
+dest_files=["res://.godot/imported/tile003.png-22b0bd0aa973891a75c8e209b58e1886.ctex"]
 
 [params]
 

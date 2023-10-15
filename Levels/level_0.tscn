@@ -366,6 +366,7 @@ physics_layer_0/collision_layer = 1
 sources/3 = SubResource("TileSetAtlasSource_eyfrt")
 
 [node name="limbo" type="Node2D"]
+position = Vector2(534, 335)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_fgymf")]
 position = Vector2(-75, -13)
