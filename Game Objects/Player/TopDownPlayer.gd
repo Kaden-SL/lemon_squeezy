@@ -7,14 +7,6 @@ func _physics_process(_delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
 	move_and_slide()
-#	handleCollision()
-
-#
-#func handleCollision():
-#	for i in get_slide_collision_count():
-#		var collision = get_slide_collision(i)
-#		var collider = collision.get_collider()
-#		print_debug(collider.name)
 
 
 
