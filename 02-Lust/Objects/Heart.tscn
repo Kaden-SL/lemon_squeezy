@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://xg66dkypxfef"]
+
+[ext_resource type="Script" path="res://02-Lust/Objects/Heart.gd" id="1_nlkyw"]
+[ext_resource type="Texture2D" uid="uid://dc33of3ndrguy" path="res://02-Lust/Art Assets/heart_sprite_1.png" id="2_02chh"]
+[ext_resource type="Texture2D" uid="uid://be20jsnrvji78" path="res://02-Lust/Art Assets/heart_sprite_2.png" id="3_ttp0d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gmkvf"]
+size = Vector2(26, 30)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jumpu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_02chh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ttp0d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Heart" type="Area2D" groups=["Heart"]]
+z_index = 1
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_nlkyw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_gmkvf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jumpu")
+frame_progress = 0.354458
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

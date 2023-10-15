@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://cr6vnfwltxt42"]
+
+[ext_resource type="Script" path="res://00-All Levels/Player/Player.gd" id="1_6j0kj"]
+[ext_resource type="Texture2D" uid="uid://of1bdcssoil8" path="res://00-All Levels/Art Assets/topdown_playersprite.png" id="2_f168k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mgcc"]
+size = Vector2(22, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8wifw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_f168k")
+}],
+"loop": true,
+"name": &"Still",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["Player"]]
+script = ExtResource("1_6j0kj")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_7mgcc")
+
+[node name="PlayerSprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8wifw")
+animation = &"Still"
