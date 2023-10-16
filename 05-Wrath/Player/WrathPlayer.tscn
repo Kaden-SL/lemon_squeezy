@@ -31,3 +31,4 @@ sprite_frames = SubResource("SpriteFrames_x6sg0")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(423, 228)
+zoom = Vector2(2, 2)
