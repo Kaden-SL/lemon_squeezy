@@ -11,7 +11,7 @@ func _ready():
 	Dialogic.connect('timeline_ended',dialogue_done)
 func dialogue_done():
 	can_move=true
-	
+	Events.wrathstart.emit()
 func _physics_process(delta):
 	if can_move:
 		self.velocity = direction * speed

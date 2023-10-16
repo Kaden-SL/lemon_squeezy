@@ -1,5 +1,5 @@
 2a60927148abd1d33b818b535e306557
-::res://::1697478836
+::res://::1697486425
 icon.svg::CompressedTexture2D::3604967623761785578::1684971234::1697478629::1::::<><>::
 README.md::TextFile::-1::1697059626::0::1::::<><>::
 ::res://00-All Levels/::1697339360
@@ -10,8 +10,8 @@ game_over_placeholder.jpg::CompressedTexture2D::2556957578209770301::1697128795:
 plain_black_background.jpg::CompressedTexture2D::2424972128279689743::1697478606::1697478606::1::::<><>::
 portal.png::CompressedTexture2D::3452341561538092652::1697085817::1697339461::1::::<><>::
 topdown_playersprite.png::CompressedTexture2D::994546288810696071::1697085817::1697339461::1::::<><>::
-::res://00-All Levels/Levels/::1697483820
-level_3.tscn::PackedScene::2517014173745417241::1697483820::0::1::::<><>::uid://bcouynx6ycqcj
+::res://00-All Levels/Levels/::1697485206
+level_3.tscn::PackedScene::2517014173745417241::1697485206::0::1::::<><>::uid://bcouynx6ycqcj
 ::res://00-All Levels/Objects/::1697340588
 Portal.gd::GDScript::-1::1697340587::0::1::::<>Area2D<>::
 Portal.tscn::PackedScene::3651041133561462774::1697339460::0::1::::<><>::res://00-All Levels/Objects/Portal.gd<>uid://bpgltcwpxv3wy
@@ -44,14 +44,14 @@ topdown1.png::CompressedTexture2D::2316044654726440702::1696973895::1697339346::
 topdown2.png::CompressedTexture2D::8839327372806765017::1696973895::1697339346::1::::<><>::
 topdown3.png::CompressedTexture2D::6389554081773262355::1696973895::1697339346::1::::<><>::
 topdown4.png::CompressedTexture2D::4733073773064432571::1696973895::1697339346::1::::<><>::
-::res://00-All Levels/Scripts/::1697339240
-Events.gd::GDScript::-1::1697330724::0::1::::<>Node<>::
+::res://00-All Levels/Scripts/::1697484511
+Events.gd::GDScript::-1::1697484511::0::1::::<>Node<>::
 ::res://01-Limbo/::1697338889
 ::res://01-Limbo/Art Assets/::1697421619
 limbo_controls_background.jpg::CompressedTexture2D::3798445784479820032::1697421619::1697421619::1::::<><>::
 ::res://01-Limbo/GUI/::1697338848
-::res://01-Limbo/Level/::1697483820
-level_0.tscn::PackedScene::6505494209966894085::1697483820::0::1::::<><>::uid://faeilsasv6ts<>uid://cr6vnfwltxt42<>uid://bsaud43p0c8ow<>uid://bpgltcwpxv3wy<>uid://bud832i3jd50o
+::res://01-Limbo/Level/::1697485206
+level_0.tscn::PackedScene::6505494209966894085::1697485206::0::1::::<><>::uid://faeilsasv6ts<>uid://cr6vnfwltxt42<>uid://bsaud43p0c8ow<>uid://bpgltcwpxv3wy<>uid://bud832i3jd50o
 ::res://01-Limbo/Player/::1697338706
 ::res://02-Lust/::1697339103
 ::res://02-Lust/Art Assets/::1697339409
@@ -80,15 +80,15 @@ tile016.png::CompressedTexture2D::5489007551572116049::1697328253::1697339331::1
 ::res://02-Lust/GUI/::1697339331
 gui.tscn::PackedScene::6733150312635531512::1697338486::0::1::::<><>::
 heartmeter.tscn::PackedScene::7044426777720669935::1697339331::0::1::::<><>::uid://bw7xf3po67nqf<>uid://ckg6fggy2moeb
-::res://02-Lust/Level/::1697483820
+::res://02-Lust/Level/::1697485206
 level_1.gd::GDScript::-1::1697337595::0::1::::<>Node2D<>::
-level_1.tscn::PackedScene::4809376463474503779::1697483820::0::1::::<><>::res://02-Lust/Level/level_1.gd<>uid://faeilsasv6ts<>uid://dx3qagqn03bra<>uid://chkxgyvemm7d2<>uid://bsaud43p0c8ow<>uid://l3oq5g7n0uvg<>uid://xg66dkypxfef<>uid://c7mmxd44grkpb
-level_2.tscn::PackedScene::1952392134939132925::1697483820::0::1::::<><>::uid://dx3qagqn03bra<>uid://chkxgyvemm7d2<>uid://faeilsasv6ts<>uid://l3oq5g7n0uvg<>uid://bsaud43p0c8ow<>uid://xg66dkypxfef
-::res://02-Lust/Objects/::1697483820
+level_1.tscn::PackedScene::4809376463474503779::1697485206::0::1::::<><>::res://02-Lust/Level/level_1.gd<>uid://faeilsasv6ts<>uid://dx3qagqn03bra<>uid://chkxgyvemm7d2<>uid://bsaud43p0c8ow<>uid://l3oq5g7n0uvg<>uid://xg66dkypxfef<>uid://c7mmxd44grkpb
+level_2.tscn::PackedScene::1952392134939132925::1697485206::0::1::::<><>::uid://dx3qagqn03bra<>uid://chkxgyvemm7d2<>uid://faeilsasv6ts<>uid://l3oq5g7n0uvg<>uid://bsaud43p0c8ow<>uid://xg66dkypxfef
+::res://02-Lust/Objects/::1697486404
 Fire.gd::GDScript::-1::1697338420::0::1::::<>Area2D<>::
-Fire.tscn::PackedScene::5286215549189667297::1697483820::0::1::::<><>::res://02-Lust/Objects/Fire.gd<>uid://di7tmbo7w6n0m
+Fire.tscn::PackedScene::5286215549189667297::1697485206::0::1::::<><>::res://02-Lust/Objects/Fire.gd<>uid://di7tmbo7w6n0m
 Heart.gd::GDScript::-1::1697337897::0::1::::<>Area2D<>::
-Heart.tscn::PackedScene::1628667430715415369::1697423376::0::1::::<><>::res://02-Lust/Objects/Heart.gd<>uid://dc33of3ndrguy<>uid://be20jsnrvji78
+Heart.tscn::PackedScene::1628667430715415369::1697486404::0::1::::<><>::res://02-Lust/Objects/Heart.gd<>uid://dc33of3ndrguy<>uid://be20jsnrvji78
 ::res://02-Lust/Player/::1697423376
 TopDownPlayer.gd::GDScript::-1::1697337791::0::1::::<>CharacterBody2D<>::
 TopDownPlayer.tscn::PackedScene::830760054174881976::1697423376::0::1::::<><>::res://02-Lust/Player/TopDownPlayer.gd<>uid://of1bdcssoil8
@@ -109,14 +109,18 @@ Greed_timeline.dtl::Resource::-1::1697478606::0::1::::<><>::
 ::res://04-Greed/GUI/::1697338848
 ::res://04-Greed/Level/::1697338701
 ::res://04-Greed/Player/::1697338706
-::res://05-Wrath/::1697341544
-::res://05-Wrath/Art Assets/::1697338717
+::res://05-Wrath/::1697486415
+WrathMusic.mp3::AudioStreamMP3::1003827566099182958::1697486378::1697486415::1::::<><>::
+::res://05-Wrath/Art Assets/::1697486415
 ::res://05-Wrath/GUI/::1697338848
-::res://05-Wrath/Level/::1697483820
-wrath.tscn::PackedScene::1365182736982637345::1697483820::0::1::::<><>::uid://faeilsasv6ts<>uid://cxm1kubfpivh1
-::res://05-Wrath/Player/::1697483820
-WrathPlayer.gd::GDScript::-1::1697483657::0::1::::<>CharacterBody2D<>::
-WrathPlayer.tscn::PackedScene::6413554856120009708::1697483820::0::1::::<><>::res://05-Wrath/Player/WrathPlayer.gd<>uid://of1bdcssoil8
+::res://05-Wrath/Level/::1697485220
+wrath.gd::GDScript::-1::1697485203::0::1::::<>Node2D<>::
+wrath.tscn::PackedScene::1365182736982637345::1697485220::0::1::::<><>::res://05-Wrath/Level/wrath.gd<>uid://faeilsasv6ts<>uid://cxm1kubfpivh1
+::res://05-Wrath/Player/::1697486319
+WrathPlayer.gd::GDScript::-1::1697486319::0::1::::<>CharacterBody2D<>::
+WrathPlayer.tscn::PackedScene::6413554856120009708::1697486319::0::1::::<><>::res://05-Wrath/Player/WrathPlayer.gd<>uid://of1bdcssoil8
+::res://05-Wrath/Timeline/::1697485350
+wrath.dtl::Resource::-1::1697485350::0::1::::<><>::
 ::res://06-Heresy/::1697338924
 ::res://06-Heresy/Art Assets/::1697338717
 ::res://06-Heresy/GUI/::1697338848
@@ -137,8 +141,8 @@ fraud_bg_placeholder.jpg::CompressedTexture2D::8312922892719050032::1697059626::
 pick_face_ending.jpg::CompressedTexture2D::6566331559439925809::1697421619::1697421619::1::::<><>::
 shake_hands_ending.jpg::CompressedTexture2D::5795222113554926860::1697421619::1697421619::1::::<><>::
 ::res://08-Fraud/Dialogic Stuff/::1697085816
-::res://08-Fraud/Dialogic Stuff/characters/::1697340731
-fraud_demon.dch::Resource::-1::1697340730::0::1::::<><>::
+::res://08-Fraud/Dialogic Stuff/characters/::1697484401
+fraud_demon.dch::Resource::-1::1697484401::0::1::::<><>::
 MC.dch::Resource::-1::1697340731::0::1::::<><>::
 ::res://08-Fraud/Dialogic Stuff/demon sprites/::1697339518
 FD_angry_talking1.png::CompressedTexture2D::5796468055457937655::1697059626::1697339518::1::::<><>::
@@ -405,7 +409,7 @@ icon_character.png::CompressedTexture2D::4229580660901790674::1693319150::169331
 icon_position.png::CompressedTexture2D::6240753079284806829::1693319150::1693319150::1::::<><>::
 index.gd::GDScript::-1::1693319150::0::1::::<>DialogicIndexer<>::
 node_portrait_container.gd::GDScript::-1::1693319150::0::1::::DialogicNode_PortraitContainer<>Control<>::
-preview_character.tres::Resource/DialogicCharacter::8864788605870491990::1693319150::0::1::::<><>::res://addons/dialogic/Resources/character.gd
+preview_character.tres::Resource/Resource::8864788605870491990::1693319150::0::1::::<><>::res://addons/dialogic/Resources/character.gd
 settings_portraits.gd::GDScript::-1::1693319150::0::1::::<>DialogicSettingsPage<>::
 settings_portraits.tscn::PackedScene::5887474122682821078::1693319150::0::1::::<><>::res://addons/dialogic/Modules/Character/settings_portraits.gd<>uid://dbpkta2tjsqim<>uid://dpwhshre1n4t6
 subsystem_portraits.gd::GDScript::-1::1693319150::0::1::::<>DialogicSubsystem<>::
