@@ -1,7 +1,8 @@
-[background arg="res://08-Fraud/Art Assets/fraud_bg_placeholder.jpg" fade="0.0"]
+[background arg="res://08-Fraud/Art Assets/fraud_background_1.jpg" fade="0.0"]
 Join MC 2
 MC: Mm, that landing could have been smoother.
 MC: Let's see. This one would be...fraud. Right
+MC: ...
 MC (talk_1): Best to avoid its residents, since they’re either devious...or desperate. However...
 MC (talk_1): They’re not worth the effort. And frankly, I’d rather not get mixed up in an unrelated mess.
 MC (neutral): Now then, where are the sharks?
@@ -22,16 +23,25 @@ fraud_demon (neutral_talk_3): Although…you seem rather exhausted, now that I g
 fraud_demon (neutral_talk_2): So here, a token of our meeting. Eating this will give you all the energy you could ever need.
 - Eat what it offers.
 	Leave --All--
-	MC: I popped the mysterious food into my mouth. It tasted.... like nothing.
+	[background arg="res://08-Fraud/Art Assets/fraud_background_2.jpg" fade="2.0"]
+	MC: I popped the mysterious food into my mouth.
+	It tasted...
+	MC: ... like nothing.
+	[background arg="res://00-All Levels/Art Assets/plain_black_background.jpg" fade="1.0"]
 	MC: Huh?
+	[background arg="res://08-Fraud/Art Assets/eat_ending_1.jpg" fade="1.0"]
 	MC: My vision... is...
+	[background arg="res://00-All Levels/Art Assets/plain_black_background.jpg" fade="3.0"]
 	MC: fading...
-	[background arg="res://08-Fraud/Art Assets/eat_ending.jpg" fade="0.0"]
+	[wait time="3.0"]
+	[background arg="res://08-Fraud/Art Assets/eat_ending_2.jpg" fade="3.0"]
 	MC: !!!
-	MC: Is that, me??
+	MC: Is that me??
 	A chilling laugh filled the space.
-	fraud_demon: Welcome to the family...
-	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="0.0"]
+	fraud_demon: Heehee...
+	fraud_demon: You will make a fine addition to my collection.
+	fraud_demon: Heeheehee...
+	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="3.0"]
 	[wait time="15.0"]
 	[end_timeline]
 - Pretend to eat what it offers.
@@ -42,11 +52,15 @@ fraud_demon (neutral_talk_3): However, you’d have to change how you look. You�
 MC (neutral): What do you have in mind?
 fraud_demon (neutral_talk_2): I’ve…we’ll say…have connections with many souls down here. I’m sure that with a little deal I could make you look like any one of them.
 The floating masks of varying expressions revolve around the demon, seeming to dance with its laughter.
-- Pick one of the faces.
+- Pick a face and put it on.
 	Leave --All--
-	[background arg="res://08-Fraud/Art Assets/pick_face_ending.jpg" fade="0.0"]
-	fraud_demon: Welcome to the family...
-	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="0.0"]
+	[background arg="res://08-Fraud/Art Assets/pick_face_ending.jpg" fade="3.0"]
+	[wait time="2.0"]
+	fraud_demon: Heeehee...
+	[background arg="res://00-All Levels/Art Assets/plain_black_background.jpg" fade="3.0"]
+	fraud_demon: You will make a fine addition to my collection...
+	fraud_demon: Heeheeeheeeee...
+	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="2.0"]
 	[wait time="15.0"]
 	[end_timeline]
 - …I’m not sure I want to be any of these souls.
@@ -72,12 +86,16 @@ MC (neutral): It wasn’t quite what I was expecting, but I’ll take it nonethe
 fraud_demon (neutral_talk_1): Good, good.
 - Shake hands.
 	Leave --All--
-	[background arg="res://08-Fraud/Art Assets/fraud_bg_placeholder.jpg" fade="0.0"]
+	[background arg="res://08-Fraud/Art Assets/fraud_background_2.jpg" fade="1.0"]
 	MC: I reached out my hand, but instead of feeling another hand around my own, I felt it around my entire body.
-	[background arg="res://08-Fraud/Art Assets/shake_hands_ending.jpg" fade="0.0"]
-	fraud_demon: I've caught you...
-	The demon opened it's mouth wide, revealing an endless, crimson abyss, before throwing MC into its mouth and swallowing him up, putting an end to his journey.
-	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="0.0"]
+	[background arg="res://08-Fraud/Art Assets/shake_hands_ending.jpg" fade="3.0"]
+	[wait time="2.0"]
+	fraud_demon: You are a fool for believing that I would fall for your silly tricks, h u m a n.
+	fraud_demon: And now that I've caught you...
+	fraud_demon: You will make a fine addition to my collection...
+	[background arg="res://00-All Levels/Art Assets/plain_black_background.jpg" fade="2.0"]
+	fraud_demon: Heeheehee...
+	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="2.0"]
 	[wait time="15.0"]
 	[end_timeline]
 - Shake hands with candy in hand.
