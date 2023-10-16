@@ -5,4 +5,4 @@ res://00-All Levels/Levels/level_3.tscn
 res://02-Lust/Objects/Fire.tscn
 res://05-Wrath/Player/WrathPlayer.tscn
 res://05-Wrath/Level/wrath.tscn
-res://05-Wrath/Level/wrath.gd
+res://05-Wrath/Timeline/wrath.dtl

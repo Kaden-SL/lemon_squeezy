@@ -384,3 +384,4 @@ position = Vector2(273, 357)
 
 [node name="wrathmusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_tdn0c")
+volume_db = 1.0
