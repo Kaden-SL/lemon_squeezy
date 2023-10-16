@@ -1,8 +1,5 @@
 res://05-Wrath/Player/WrathPlayer.tscn
-res://08-Fraud/Dialogic Stuff/timelines/fraud_timeline.dtl
-res://00-All Levels/Player/Player.tscn
-res://02-Lust/Player/TopDownPlayer.tscn
-res://02-Lust/Objects/Heart.tscn
+res://05-Wrath/Player/WrathPlayer.gd
 res://01-Limbo/Level/level_0.tscn
 res://02-Lust/Level/level_1.tscn
 res://02-Lust/Level/level_2.tscn

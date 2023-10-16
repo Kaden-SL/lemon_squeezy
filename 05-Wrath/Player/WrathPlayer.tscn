@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://of1bdcssoil8" path="res://00-All Levels/Art Assets/topdown_playersprite.png" id="2_bgbxr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y41p7"]
-size = Vector2(23, 36)
+size = Vector2(23, 31)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x6sg0"]
 animations = [{
@@ -22,7 +22,7 @@ collision_layer = 2
 script = ExtResource("1_iepda")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(422.5, 231)
+position = Vector2(422.5, 228.5)
 shape = SubResource("RectangleShape2D_y41p7")
 
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="."]
@@ -31,4 +31,3 @@ sprite_frames = SubResource("SpriteFrames_x6sg0")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(423, 228)
-zoom = Vector2(3, 3)
