@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://tpkmiogf6w3j"]
+[gd_scene load_steps=6 format=3 uid="uid://tpkmiogf6w3j"]
 
+[ext_resource type="Script" path="res://05-Wrath/Level/wrath.gd" id="1_je6ye"]
 [ext_resource type="Texture2D" uid="uid://faeilsasv6ts" path="res://00-All Levels/Art Assets/demonset.png" id="1_k7ib6"]
 [ext_resource type="PackedScene" uid="uid://cxm1kubfpivh1" path="res://05-Wrath/Player/WrathPlayer.tscn" id="2_tfkkn"]
 
@@ -369,6 +370,7 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_ivf73")
 
 [node name="Wrath" type="Node2D"]
+script = ExtResource("1_je6ye")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(611, 390)

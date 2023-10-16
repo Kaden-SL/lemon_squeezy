@@ -1,3 +1,4 @@
+Node
 TileMap
 AnimatedSprite2D
 CollisionShape2D
@@ -5,7 +6,6 @@ CharacterBody2D
 Area2D
 CanvasLayer
 TextureProgressBar
-Node
 Label
 TextureRect
 MarginContainer
