@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cyxksljxbdxgv"]
+[gd_scene load_steps=8 format=3 uid="uid://cyxksljxbdxgv"]
 
 [ext_resource type="Texture2D" uid="uid://faeilsasv6ts" path="res://00-All Levels/Art Assets/demonset.png" id="1_slstl"]
 [ext_resource type="PackedScene" uid="uid://cr6vnfwltxt42" path="res://00-All Levels/Player/Player.tscn" id="2_fgymf"]
 [ext_resource type="PackedScene" uid="uid://bsaud43p0c8ow" path="res://00-All Levels/Objects/Portal.tscn" id="3_avj7r"]
 [ext_resource type="Texture2D" uid="uid://bpgltcwpxv3wy" path="res://00-All Levels/Art Assets/portal.png" id="4_3is3r"]
+[ext_resource type="Texture2D" uid="uid://bud832i3jd50o" path="res://01-Limbo/Art Assets/limbo_controls_background.jpg" id="5_ax20e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eyfrt"]
 texture = ExtResource("1_slstl")
@@ -388,3 +389,15 @@ position = Vector2(33, 1010)
 rotation = 1.5708
 scale = Vector2(20, 20)
 texture = ExtResource("4_3is3r")
+
+[node name="LimboControlsBackground" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(30, 1)
+scale = Vector2(0.165278, 0.165278)
+texture = ExtResource("5_ax20e")
+
+[node name="LimboControlsBackground2" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(-1787, -673)
+scale = Vector2(2.79002, 2.79002)
+texture = ExtResource("5_ax20e")
