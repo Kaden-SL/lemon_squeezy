@@ -9,4 +9,7 @@ func _on_body_entered(body):
 		elif current_scene_number == 21:
 			var next_level_path = "res://02-Lust/Level/level_2.tscn"
 			get_tree(). change_scene_to_file(next_level_path)
+		elif current_scene_number == 22:
+			var next_level_path = "res://04-Greed/Level/greed.tscn"
+			get_tree(). change_scene_to_file(next_level_path)
 		

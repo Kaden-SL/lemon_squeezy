@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://220u341pwtib"]
+[gd_scene load_steps=11 format=3 uid="uid://220u341pwtib"]
 
+[ext_resource type="Script" path="res://02-Lust/Level/level_2.gd" id="1_w8yr0"]
 [ext_resource type="Texture2D" uid="uid://dx3qagqn03bra" path="res://02-Lust/Art Assets/lust_bg_placeholder.jpg" id="1_wtrbo"]
 [ext_resource type="PackedScene" uid="uid://chkxgyvemm7d2" path="res://02-Lust/Objects/Fire.tscn" id="5_dgs0h"]
 [ext_resource type="Texture2D" uid="uid://faeilsasv6ts" path="res://00-All Levels/Art Assets/demonset.png" id="5_jrmyf"]
 [ext_resource type="PackedScene" uid="uid://l3oq5g7n0uvg" path="res://02-Lust/Player/TopDownPlayer.tscn" id="5_ts3ho"]
 [ext_resource type="PackedScene" uid="uid://bsaud43p0c8ow" path="res://00-All Levels/Objects/Portal.tscn" id="6_cpg36"]
 [ext_resource type="PackedScene" uid="uid://xg66dkypxfef" path="res://02-Lust/Objects/Heart.tscn" id="6_qu8au"]
+[ext_resource type="PackedScene" uid="uid://c7mmxd44grkpb" path="res://02-Lust/GUI/heartmeter.tscn" id="7_71708"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hwclp"]
 texture = ExtResource("5_jrmyf")
@@ -369,6 +371,7 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_hwclp")
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_w8yr0")
 
 [node name="TopDownPlayer" parent="." instance=ExtResource("5_ts3ho")]
 
@@ -427,4 +430,8 @@ position = Vector2(385, -285)
 position = Vector2(528, -306)
 
 [node name="Portal" parent="." instance=ExtResource("6_cpg36")]
-position = Vector2(209, 0)
+position = Vector2(746, -291)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="heartmeter" parent="CanvasLayer" instance=ExtResource("7_71708")]

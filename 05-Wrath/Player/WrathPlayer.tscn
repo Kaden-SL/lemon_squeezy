@@ -1,16 +1,79 @@
-[gd_scene load_steps=5 format=3 uid="uid://cxm1kubfpivh1"]
+[gd_scene load_steps=14 format=3 uid="uid://cxm1kubfpivh1"]
 
 [ext_resource type="Script" path="res://05-Wrath/Player/WrathPlayer.gd" id="1_iepda"]
-[ext_resource type="Texture2D" uid="uid://of1bdcssoil8" path="res://00-All Levels/Art Assets/topdown_playersprite.png" id="2_bgbxr"]
+[ext_resource type="Texture2D" uid="uid://d2hnomskx0wyw" path="res://00-All Levels/Art Assets/topdown_playersprite.png" id="2_bgbxr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y41p7"]
 size = Vector2(23, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsada"]
+atlas = ExtResource("2_bgbxr")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhik2"]
+atlas = ExtResource("2_bgbxr")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30o0f"]
+atlas = ExtResource("2_bgbxr")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14cml"]
+atlas = ExtResource("2_bgbxr")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylm0g"]
+atlas = ExtResource("2_bgbxr")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3x844"]
+atlas = ExtResource("2_bgbxr")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8unsw"]
+atlas = ExtResource("2_bgbxr")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jk8t1"]
+atlas = ExtResource("2_bgbxr")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_46ojf"]
+atlas = ExtResource("2_bgbxr")
+region = Rect2(256, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x6sg0"]
 animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_bgbxr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tsada")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qhik2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30o0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14cml")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ylm0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3x844")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8unsw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jk8t1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_46ojf")
 }],
 "loop": true,
 "name": &"default",
