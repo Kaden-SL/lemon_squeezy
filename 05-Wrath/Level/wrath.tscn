@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://tpkmiogf6w3j"]
+[gd_scene load_steps=9 format=3 uid="uid://tpkmiogf6w3j"]
 
 [ext_resource type="Script" path="res://05-Wrath/Level/wrath.gd" id="1_je6ye"]
 [ext_resource type="Texture2D" uid="uid://faeilsasv6ts" path="res://00-All Levels/Art Assets/demonset.png" id="1_k7ib6"]
 [ext_resource type="PackedScene" uid="uid://cxm1kubfpivh1" path="res://05-Wrath/Player/WrathPlayer.tscn" id="2_tfkkn"]
 [ext_resource type="AudioStream" uid="uid://oki5myliwaoc" path="res://05-Wrath/WrathMusic.mp3" id="4_tdn0c"]
 [ext_resource type="PackedScene" uid="uid://c7mmxd44grkpb" path="res://02-Lust/GUI/heartmeter.tscn" id="5_ya4sy"]
+[ext_resource type="Texture2D" uid="uid://r6btu4nj0ght" path="res://05-Wrath/Art Assets/hellbeg.jpg" id="6_2stg5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ivf73"]
 texture = ExtResource("1_k7ib6")
@@ -390,3 +391,9 @@ volume_db = 1.0
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="heartmeter" parent="CanvasLayer" instance=ExtResource("5_ya4sy")]
+
+[node name="LustBgPlaceholder" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(652, 388)
+scale = Vector2(1.02891, 0.80324)
+texture = ExtResource("6_2stg5")
