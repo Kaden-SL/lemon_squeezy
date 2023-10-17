@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://b06ccrflyhayh"]
+
+[ext_resource type="Texture2D" uid="uid://c3qmhs3nrn6c6" path="res://09-Treachery/treach. bg.png" id="1_htn1b"]
+[ext_resource type="Texture2D" uid="uid://biwu6kyq48ejq" path="res://09-Treachery/treach. ice floor.png" id="2_rv3j8"]
+[ext_resource type="Texture2D" uid="uid://dxv8tlfcjtsnw" path="res://09-Treachery/treach. ice ceiling.png" id="3_ns767"]
+[ext_resource type="Texture2D" uid="uid://d2wjyiam5qh0l" path="res://09-Treachery/treach. 2nd ice floor.png" id="4_u61ia"]
+[ext_resource type="Texture2D" uid="uid://bg37etw87l846" path="res://09-Treachery/treach. ice obstacles.png" id="5_5tfyn"]
+[ext_resource type="Texture2D" uid="uid://daxisfdrxsioh" path="res://09-Treachery/treach. portal 2.png" id="6_wrb71"]
+[ext_resource type="Texture2D" uid="uid://c3tmua1kcrjg8" path="res://09-Treachery/treach. portal.png" id="7_mbxux"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Treach_Bg" type="Sprite2D" parent="."]
+position = Vector2(572, 330)
+scale = Vector2(0.650521, 0.668056)
+texture = ExtResource("1_htn1b")
+
+[node name="Treach_IceFloor" type="Sprite2D" parent="."]
+position = Vector2(578, 580)
+scale = Vector2(0.601042, 0.52549)
+texture = ExtResource("2_rv3j8")
+
+[node name="Treach_IceCeiling" type="Sprite2D" parent="."]
+position = Vector2(576.5, 75.5)
+scale = Vector2(0.598437, 0.7)
+texture = ExtResource("3_ns767")
+
+[node name="Treach_2NdIceFloor" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.596875, 0.633333)
+texture = ExtResource("4_u61ia")
+
+[node name="Treach_IceObstacles" type="Sprite2D" parent="."]
+position = Vector2(545, 495)
+scale = Vector2(0.563396, 0.658334)
+texture = ExtResource("5_5tfyn")
+
+[node name="Treach_Portal2" type="Sprite2D" parent="."]
+position = Vector2(143, 202)
+scale = Vector2(0.633333, 0.649402)
+texture = ExtResource("6_wrb71")
+
+[node name="Treach_Portal" type="Sprite2D" parent="."]
+position = Vector2(1113, 440)
+scale = Vector2(0.622181, 0.610558)
+texture = ExtResource("7_mbxux")
