@@ -1,3 +1,36 @@
 Join MC 1 [ mirrored="true"]
 [You find yourself in a field of gold coins. There must be millions to billions of gold coins surrounding you.]
-There are people around you. They look on the brink of death, wearing torn and dirt covered clothing. They kneel on the ground collecting gold coins and putting them into bags. Each bag has a giant hole in it. They don't seem to care.
+There are people around you. They look on the brink of death, wearing torn and dirt covered clothing. They kneel on the ground collecting gold coins and putting them into bags. Each bag has a giant hole in it. They seem determined to fill the bag regardless.
+MC: I need to find my way to the next level.
+Join greed_demon (neutral) 3
+greed_demon: Halt! You! Why are you not bagging gold?
+MC (angry): Hmmm… Because I don’t want to.
+greed_demon: WHAT! How can you resist all this gold?
+MC: I guess I have a different type of greed in me. A stronger greed than you could understand.
+greed_demon: I AM GREED INCARNATE. How could you possibly be more greedy than me?
+- I stole candy from a baby and then sold it.
+	greed_demon: Hmm that is rather Greedy. Wait the baby or the candy?
+- I’d shave off my hair for a dollar
+	greed_demon: Why do you still have hair then? Stop wasting my time.
+	[end_timeline]
+greed_demon: Nevermind, either way that's not enough. What else?
+- I feel I have proven I am greedy enough
+	greed_demon: Stop wasting my time and get back to collecting gold coins.
+	[end_timeline]
+- During Halloween, I always take the entire bowl of candy
+	greed_demon: I’ve… also.. Done that. What else?
+MC: I doubt you have. Ill continue just to prove my point. Have you ever
+- Bought all the jars of Nutella off the shelf? I don't even like Nutella that much
+	greed_demon: How is such greed possible?.... I mean of course I have.
+- Dove into fountains to collect all the coins at the bottom?
+	greed_demon: Yet these coins don't interest you. I don't believe it.
+	[end_timeline]
+MC: I also
+- stole eggs from a chicken
+	greed_demon: That's really not that impressive.
+	[end_timeline]
+- Take two seats on the bus. One for me one for my bag
+	greed_demon: Perhaps you are the greediest among us. Last question, why do you want to leave this level so badly?
+MC: I definetly am. I want to leave so that I can take over Hell.
+greed_demon: WHAT! YOU ARE INSANE!
+- No, I’m Greedy!

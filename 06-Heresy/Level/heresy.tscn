@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpaww8m5gyp0s"]
+
+[ext_resource type="Script" path="res://06-Heresy/Level/heresy.gd" id="1_ipr71"]
+
+[node name="heresy" type="Node2D"]
+script = ExtResource("1_ipr71")
