@@ -1,7 +1,7 @@
+Label
 HBoxContainer
 Panel
 MarginContainer
-Label
 Sprite2D
 Node
 ProgressBar

@@ -38,10 +38,44 @@ offset_bottom = 562.0
 [node name="Panel" type="Panel" parent="UI/Loyalty/MarginContainer"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="UI/Loyalty/MarginContainer/Panel"]
-layout_mode = 0
-offset_right = 568.0
-offset_bottom = 179.0
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Loyalty/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/Loyalty/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "Test text"
+
+[node name="MarginContainer2" type="MarginContainer" parent="UI/Loyalty"]
+offset_left = 661.0
+offset_top = 254.0
+offset_right = 1148.0
+offset_bottom = 643.0
+
+[node name="Panel" type="Panel" parent="UI/Loyalty/MarginContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Loyalty/MarginContainer2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/Loyalty/MarginContainer2/HBoxContainer"]
+layout_mode = 2
+text = "Test text"
+
+[node name="MarginContainer3" type="MarginContainer" parent="UI/Loyalty"]
+offset_left = 357.0
+offset_top = 213.0
+offset_right = 641.0
+offset_bottom = 367.0
+
+[node name="Panel" type="Panel" parent="UI/Loyalty/MarginContainer3"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/Loyalty/MarginContainer3"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/Loyalty/MarginContainer3/HBoxContainer"]
+layout_mode = 2
+text = "Test text"
 
 [node name="Player" type="Sprite2D" parent="UI"]
 position = Vector2(1059, 90)
