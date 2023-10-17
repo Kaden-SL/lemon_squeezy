@@ -11,3 +11,5 @@ res://06-Heresy/Level/heresy.tscn
 res://05-Wrath/Level/wrath.tscn
 res://02-Lust/Objects/Fire.tscn
 res://00-All Levels/Objects/Portal.gd
+res://02-Lust/Player/TopDownPlayer.tscn
+res://00-All Levels/Player/Player.tscn
