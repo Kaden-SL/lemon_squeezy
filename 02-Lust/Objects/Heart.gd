@@ -3,7 +3,7 @@ extends Area2D
 
 @onready var player = get_parent().get_parent().get_node("TopDownPlayer")
 func _physics_process(_delta):
-	position = position.move_toward(player.position,_delta*50)
+	position = position.move_toward(player.position,_delta*215)
 	
 func _on_body_entered(body):
 	queue_free()

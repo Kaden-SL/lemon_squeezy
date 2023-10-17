@@ -1,9 +1,9 @@
+Node
 Label
 HBoxContainer
 Panel
 MarginContainer
 Sprite2D
-Node
 ProgressBar
 AudioStreamPlayer2D
 TileMap
