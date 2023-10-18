@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://b06ccrflyhayh"]
 
-[ext_resource type="Texture2D" uid="uid://c3qmhs3nrn6c6" path="res://09-Treachery/treach. bg.png" id="1_htn1b"]
-[ext_resource type="Texture2D" uid="uid://biwu6kyq48ejq" path="res://09-Treachery/treach. ice floor.png" id="2_rv3j8"]
-[ext_resource type="Texture2D" uid="uid://dxv8tlfcjtsnw" path="res://09-Treachery/treach. ice ceiling.png" id="3_ns767"]
-[ext_resource type="Texture2D" uid="uid://d2wjyiam5qh0l" path="res://09-Treachery/treach. 2nd ice floor.png" id="4_u61ia"]
-[ext_resource type="Texture2D" uid="uid://bg37etw87l846" path="res://09-Treachery/treach. ice obstacles.png" id="5_5tfyn"]
-[ext_resource type="Texture2D" uid="uid://daxisfdrxsioh" path="res://09-Treachery/treach. portal 2.png" id="6_wrb71"]
-[ext_resource type="Texture2D" uid="uid://c3tmua1kcrjg8" path="res://09-Treachery/treach. portal.png" id="7_mbxux"]
+[ext_resource type="Texture2D" uid="uid://cm8dqw1yfaf6j" path="res://09-Treachery/treach. bg.png" id="1_htn1b"]
+[ext_resource type="Texture2D" uid="uid://ck0l7u8gc0ap" path="res://09-Treachery/treach. ice floor.png" id="2_rv3j8"]
+[ext_resource type="Texture2D" uid="uid://b3wnud74qhh4e" path="res://09-Treachery/treach. ice ceiling.png" id="3_ns767"]
+[ext_resource type="Texture2D" uid="uid://dqs21ivmft7ew" path="res://09-Treachery/treach. 2nd ice floor.png" id="4_u61ia"]
+[ext_resource type="Texture2D" uid="uid://tectmfji5wwq" path="res://09-Treachery/treach. ice obstacles.png" id="5_5tfyn"]
+[ext_resource type="Texture2D" uid="uid://cro5xo4wlj0yf" path="res://09-Treachery/treach. portal 2.png" id="6_wrb71"]
+[ext_resource type="Texture2D" uid="uid://b62oam3x33whn" path="res://09-Treachery/treach. portal.png" id="7_mbxux"]
 
 [node name="Node2D" type="Node2D"]
 
