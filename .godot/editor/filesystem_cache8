@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1697639686
+::res://::1697648090
 icon.svg::CompressedTexture2D::3604967623761785578::1697511604::1697511604::1::::<><>::
 README.md::TextFile::-1::1697511604::0::1::::<><>::
 ::res://00-All Levels/::1697639610
@@ -133,11 +133,13 @@ heresy.dtl::Resource::-1::1697537236::0::1::::<><>::
 ::res://06-Heresy/Level/::1697540106
 heresy.gd::GDScript::-1::1697511603::0::1::::<>Node2D<>::
 heresy.tscn::PackedScene::8213471520136808832::1697540106::0::1::::<><>::res://06-Heresy/Level/heresy.gd<>uid://c7mmxd44grkpb::::res://02-Lust/GUI/heartmeter.tscn<>uid://7856gfdxfvk5::::res://00-All Levels/Player/placeholder character/topdown1.png<>uid://chyf5rl3hy5d1::::res://00-All Levels/Objects/placeholder demon/demon_topdown1.png<>uid://bpgltcwpxv3wy::::res://00-All Levels/Art Assets/portal.png
-::res://07-Violence/::1697623120
-::res://07-Violence/Art Assets/::1697623120
+::res://07-Violence/::1697648088
+::res://07-Violence/Art Assets/::1697648088
 background.png::CompressedTexture2D::408462951507551776::1697553769::1697623112::1::::<><>::
 buildings.png::CompressedTexture2D::1405017461474599043::1697553827::1697553832::1::::<><>::
 chains.png::CompressedTexture2D::593344543744046321::1697553836::1697553840::1::::<><>::
+fire demon front.png::CompressedTexture2D::974205832768765702::1697648085::1697648086::1::::<><>::
+fire demon side.png::CompressedTexture2D::6275580404211514724::1697648093::1697648093::1::::<><>::
 floor.png::CompressedTexture2D::1639600653191008908::1697553789::1697553794::1::::<><>::
 pointer.png::CompressedTexture2D::6159981119147373289::1697537236::1697623112::1::::<><>::
 violence_mc_NoWeapon.png::CompressedTexture2D::4506465615454621433::1697537236::1697623112::1::::<><>::
@@ -179,7 +181,8 @@ MC_talk1.png::CompressedTexture2D::4149437787467576569::1697511604::1697511604::
 MC_talk2.png::CompressedTexture2D::2898999054284582659::1697511604::1697511604::1::::<><>::
 ::res://08-Fraud/Dialogic Stuff/timelines/::1697512413
 fraud_timeline.dtl::Resource::-1::1697511604::0::1::::<><>::
-::res://09-Treachery/::1697639694
+::res://09-Treachery/::1697648057
+fire demon front.png::CompressedTexture2D::712504665669388698::1697648065::1697648052::1::::<><>::
 santan facing right.png::CompressedTexture2D::6314766512435409333::1697639680::1697639680::1::::<><>::
 satan front.png::CompressedTexture2D::3264603063712000888::1697639694::1697639695::1::::<><>::
 treach. 2nd ice floor.png::CompressedTexture2D::8321128591487503686::1697426292::1697553582::1::::<><>::
