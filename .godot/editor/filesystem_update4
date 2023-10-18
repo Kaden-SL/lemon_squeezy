@@ -1,12 +1,20 @@
+<<<<<<< HEAD
+=======
+res://04-Greed/Dialogic Stuff/Timeline/Greed_timeline.dtl
+>>>>>>> 7e71e55b6023ff3f3d2a004ac863886797cef95c
 res://01-Limbo/Level/level_0.tscn
 res://02-Lust/Level/level_1.tscn
 res://02-Lust/Level/level_2.tscn
 res://00-All Levels/Levels/level_3.tscn
 res://06-Heresy/Level/heresy.tscn
 res://05-Wrath/Level/wrath.tscn
+<<<<<<< HEAD
 res://05-Wrath/Player/WrathPlayer.tscn
 res://02-Lust/Objects/Fire.tscn
 res://04-Greed/Level/greed.tscn
 res://02-Lust/Player/TopDownPlayer.tscn
 res://00-All Levels/Player/Player.tscn
 res://09-Treachery/treachery.tscn
+=======
+res://00-All Levels/Player/Player.tscn
+>>>>>>> 7e71e55b6023ff3f3d2a004ac863886797cef95c

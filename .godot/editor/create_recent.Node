@@ -1,10 +1,13 @@
+<<<<<<< HEAD
 ParallaxBackground
+=======
+Panel
+Node
+>>>>>>> 7e71e55b6023ff3f3d2a004ac863886797cef95c
 Label
 HBoxContainer
-Panel
 MarginContainer
 Sprite2D
-Node
 ProgressBar
 AudioStreamPlayer2D
 TileMap
