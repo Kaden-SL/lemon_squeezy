@@ -25,7 +25,7 @@ fraud_demon (neutral_talk_2): So here, a token of our meeting. Eating this will 
 	Leave --All--
 	[background arg="res://08-Fraud/Art Assets/fraud_background_2.jpg" fade="2.0"]
 	MC: I popped the mysterious food into my mouth.
-	It tasted...
+	MC: It tasted...
 	MC: ... like nothing.
 	[background arg="res://00-All Levels/Art Assets/plain_black_background.jpg" fade="1.0"]
 	MC: Huh?
@@ -47,8 +47,8 @@ fraud_demon (neutral_talk_2): So here, a token of our meeting. Eating this will 
 - Pretend to eat what it offers.
 	fraud_demon (thinking): Hm…I see.
 	fraud_demon (neutral_talk_1): You’re an interesting soul, aren’t you.
-fraud_demon (neutral_talk_2): Perhaps you’d like to join a little group of mine. We’re what you’d call the more elite demons around here.
-fraud_demon (neutral_talk_3): However, you’d have to change how you look. You’re a little too…human for our taste.
+fraud_demon (neutral_talk_2): Perhaps you’d like to join a little group of mine. We’re what you would call... the more *elite* demons around here.
+fraud_demon (neutral_talk_3): However, you’d have to change how you look. You’re a little too… human for our taste.
 MC (neutral): What do you have in mind?
 fraud_demon (neutral_talk_2): I’ve…we’ll say…have connections with many souls down here. I’m sure that with a little deal I could make you look like any one of them.
 The floating masks of varying expressions revolve around the demon, seeming to dance with its laughter.
@@ -66,24 +66,32 @@ The floating masks of varying expressions revolve around the demon, seeming to d
 - …I’m not sure I want to be any of these souls.
 	fraud_demon (neutral_talk_3): What’s wrong with these spirits?
 MC (talk_1): It’s…not quite that I want to become another human. As plain as I am, it’s served me well enough as it is.
-MC (neutral): You know, unassuming. Able to talk to people. Something that, no offense, isn’t something you can do that often.
+MC (neutral): You know, unassuming. Able to talk to people... to *persuade* them. Something that, no offense, isn’t something *you* can do that often.
 fraud_demon (neutral_talk_3): …What’s your point?
-MC (neutral): I’m saying, I’d like to change your deal. I’d rather become a demon.
-fraud_demon (neutral_talk_1): You’re don’t honestly believe that I’ll-
+MC (neutral): All I'm saying is, it must be difficult getting new sinners to willingly follow your lead.
+MC (talk_1): But I can help you.
+fraud_demon (neutral_talk_1): Hah! You, a human, can help *me*? You’re don’t honestly believe that I’ll-
 MC (neutral): Why not?
 Update fraud_demon (neutral_talk_3)
-MC (talk_1): You’ve said it yourself. You’ve got connections with those unfortunate enough to get down here. But for every one that you’ve gotten to join, you’ve killed another. Demons, humans, it doesn’t really matter.
-MC (talk_1): But if you’re a human…true, you don’t get as much access to sin as some demons do, and yet you gain something else - the ability to fit in and sympathize.
+MC (talk_1): You’ve said it yourself. You’ve got connections with those unfortunate enough to get down here. But that involves having people come down here in the first place.
 fraud_demon (thinking): ...
-MC (neutral): You can be the one to shepherd others to your cause without having the fear of demons twisting the deal, not knowing that their fate was sealed the moment you walked up to them.
-MC (talk_1): So? What do you say?
+MC (talk_1): Now, here's my proposal. 
+MC (neutral): I want to take over hell, and to do so, I need all the support I can get, which is where you come in.
+fraud_demon (angry_talk_1): And what makes you think that I will give *you* my support?
+MC (talk_1): Aren't I glad you asked!
+Update fraud_demon (neutral_talk_3)
+MC (smirk): After you let me pass through this circle, unharmed, I will make my merry way down into the very last circle and wrest the power from Satan.
+MC (talk_1): And once I take over Hell, you will be rewarded for your... overwhelmingly positive support, in the form of a regular supply of sinners for your... awfully intricate masks.
+MC (neutral): So? What do you say?
 Update MC (neutral)
 fraud_demon (thinking): …A human, wanting to twist the greed of a demon.
 fraud_demon (neutral_talk_1): You’re brazen, I’ll give you that. But those are the kind of individuals that truly thrive down here.
-fraud_demon (neutral_talk_3): As for the deal…it’ll be a tentative consideration. I’ll change it to where we will swap only for a short time. A trial period, so to speak, for both of us.
-fraud_demon (neutral_talk_2): Once we switch back, and have enough time to fully consider the deal, then we can come to whatever conclusion we need to. Does that sound fair?
-MC (neutral): It wasn’t quite what I was expecting, but I’ll take it nonetheless.
-fraud_demon (neutral_talk_1): Good, good.
+fraud_demon (neutral_talk_3): As for the deal... I'll take it. 
+Update MC (shocked)
+MC (talk_1): Hah! I wasn't expecting you to actually agree, it looks like we will make a great team, you and I.
+fraud_demon (neutral_talk_1): Heehee, I agree. 
+[background arg="res://08-Fraud/Art Assets/fraud_background_2.jpg" fade="1.0"]
+From under its yellow cloak, the demon outstretched a red hand, offering it to shake, but something about it was off putting.
 - Shake hands.
 	Leave --All--
 	[background arg="res://08-Fraud/Art Assets/fraud_background_2.jpg" fade="1.0"]
@@ -98,7 +106,11 @@ fraud_demon (neutral_talk_1): Good, good.
 	[background arg="res://00-All Levels/Art Assets/game_over_placeholder.jpg" fade="2.0"]
 	[wait time="15.0"]
 	[end_timeline]
-- Shake hands with candy in hand.
-	The demon and human shake hands, their bodies swapping with a ripple of red energy.
-	Update fraud_demon 1 [ mirrored="true"]
-	Update MC 3 [ mirrored="false"]
+- "You have my word"
+	Update fraud_demon (neutral_talk_3)
+	Realizing that Damien was not going to fall for it's trap, the demon quietly retracted its hand and moved aside, allowing him to pass through.
+	Leave MC [animation="Slide Out Right" length="3" wait="true"]
+	Update fraud_demon (neutral_talk_1) 2 [ mirrored="true" move_time="1"]
+	Once the Damien left the circle, the masks around the demon began to giggle.
+	"Foolish human, hee hee..."
+	[background arg="res://00-All Levels/Art Assets/plain_black_background.jpg" fade="2.0"]
