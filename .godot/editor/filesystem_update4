@@ -1,7 +1,8 @@
-res://05-Wrath/Level/wrath.tscn
+res://04-Greed/Dialogic Stuff/Timeline/Greed_timeline.dtl
 res://01-Limbo/Level/level_0.tscn
 res://02-Lust/Level/level_1.tscn
 res://02-Lust/Level/level_2.tscn
 res://00-All Levels/Levels/level_3.tscn
 res://06-Heresy/Level/heresy.tscn
+res://05-Wrath/Level/wrath.tscn
 res://00-All Levels/Player/Player.tscn
