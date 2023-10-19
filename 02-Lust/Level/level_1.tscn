@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://carxy0hkwunbn"]
+[gd_scene load_steps=12 format=3 uid="uid://carxy0hkwunbn"]
 
 [ext_resource type="Script" path="res://02-Lust/Level/level_1.gd" id="1_meson"]
 [ext_resource type="Texture2D" uid="uid://faeilsasv6ts" path="res://00-All Levels/Art Assets/demonset.png" id="2_1atds"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://l3oq5g7n0uvg" path="res://02-Lust/Player/TopDownPlayer.tscn" id="6_3sbh0"]
 [ext_resource type="PackedScene" uid="uid://xg66dkypxfef" path="res://02-Lust/Objects/Heart.tscn" id="7_3vouf"]
 [ext_resource type="PackedScene" uid="uid://c7mmxd44grkpb" path="res://02-Lust/GUI/heartmeter.tscn" id="8_8wu53"]
+[ext_resource type="AudioStream" uid="uid://dpbc4kpt4xkbu" path="res://02-Lust/lust music 1.wav" id="9_2s372"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vabf4"]
 texture = ExtResource("2_1atds")
@@ -569,3 +570,7 @@ position = Vector2(1766, 1943)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="heartmeter" parent="CanvasLayer" instance=ExtResource("8_8wu53")]
+
+[node name="lust music 1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_2s372")
+autoplay = true

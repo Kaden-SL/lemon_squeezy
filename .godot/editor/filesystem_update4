@@ -1,12 +1,9 @@
-res://05-Wrath/Player/WrathPlayer.tscn
-res://05-Wrath/Level/wrath.tscn
 res://02-Lust/GUI/heartmeter.tscn
+res://05-Wrath/Player/WrathPlayer.tscn
 res://02-Lust/Objects/Heart.tscn
-res://05-Wrath/Player/WrathPlayer.gd
+res://05-Wrath/Level/wrath.tscn
 res://00-All Levels/Player/Player.tscn
 res://01-Limbo/Level/level_0.tscn
-res://00-All Levels/Player/Player.gd
-res://00-All Levels/Objects/Portal.gd
 res://02-Lust/Level/level_2.tscn
 res://04-Greed/Level/greed.tscn
-res://04-Greed/Level/greed.gd
+res://02-Lust/Level/level_1.tscn

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://pe2a35htq4cj"
+path="res://.godot/imported/lust music 2.wav-dbd0b3a36e6a002b4916947a6158025e.sample"
+
+[deps]
+
+source_file="res://02-Lust/lust music 2.wav"
+dest_files=["res://.godot/imported/lust music 2.wav-dbd0b3a36e6a002b4916947a6158025e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
