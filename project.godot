@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 Events="*res://00-All Levels/Scripts/Events.gd"
+enemy_state="*res://07-Violence/Levels/enemy_state.gd"
+player_state="*res://07-Violence/Levels/player_state.gd"
+demon_state="*res://07-Violence/Levels/demon_state.gd"
+human_state="*res://07-Violence/Levels/human_state.gd"
 
 [debug]
 

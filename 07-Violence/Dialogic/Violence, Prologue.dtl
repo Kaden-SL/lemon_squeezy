@@ -1,5 +1,4 @@
-[background arg="res://07-Violence/Art Assets/background.png" fade="0.0"]
-A gust of wind blows through the stagnant air, nearby chains rattling in eerie sync. The human raises an eyebrow at their not-so subtle placement around the scenery.
+A gust of wind blows through the stagnant air, nearby chains rattling in eerie sync. Damien raises an eyebrow at their not-so subtle placement around the scenery.
 Join MC 3
 MC (shocked): ...Well that's not unsettling at all.
 Leave MC
@@ -15,10 +14,10 @@ Join MC 3
 MC (talk_2): Boxes, boxes...what's something that can tell me where I am?
 Leave MC
 A low growl echoes from around the room, making the hair on the back of his neck stand up. He whirls around, head darting back and forth to try to locate the source.
-Join MC 3
+Join MC (angry_talk2) 3
 MC (angry_talk2): Who's there?!
 Leave MC
-Before he can pinpoint what he needs to, his blood boils and he instinctively jumps back, narrowly avoiding a fast blur. Glowing orbs meet his gaze.
-Join MC 3
+Before he can pinpoint what he needs to, his blood boils and Damien instinctively jumps back, narrowly avoiding a fast blur. Glowing orbs meet his gaze.
+Join MC (angry_talk2) 3
 MC (shocked): Ah, crap.
 [end_timeline]
