@@ -6,3 +6,7 @@ res://05-Wrath/Player/WrathPlayer.gd
 res://00-All Levels/Player/Player.tscn
 res://01-Limbo/Level/level_0.tscn
 res://00-All Levels/Player/Player.gd
+res://00-All Levels/Objects/Portal.gd
+res://02-Lust/Level/level_2.tscn
+res://04-Greed/Level/greed.tscn
+res://04-Greed/Level/greed.gd
