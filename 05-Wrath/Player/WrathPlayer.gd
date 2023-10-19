@@ -16,7 +16,7 @@ func dialogue_done():
 	Events.wrathstart.emit()
 func _physics_process(delta):
 	if can_move:
-		$PlayerSprite.scale.x = direction
+		look_at(get_global_mouse_position())
 		self.velocity = direction * speed
 		move_and_slide()
 		if is_on_wall() or is_on_floor() or is_on_ceiling():
