@@ -83,16 +83,13 @@ collision_layer = 2
 script = ExtResource("1_iepda")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(422.5, 228.5)
+position = Vector2(0.5, 1.5)
 shape = SubResource("RectangleShape2D_y41p7")
 
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="."]
-position = Vector2(423, 228)
+z_index = 1
+position = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_x6sg0")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(423, 228)
-zoom = Vector2(2, 2)
 
 [node name="CutsceneAudio" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_pj5k6")
