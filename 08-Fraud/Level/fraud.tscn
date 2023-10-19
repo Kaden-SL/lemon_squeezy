@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://nf2x5hubsbps"]
+
+[ext_resource type="Script" path="res://08-Fraud/Level/fraud.gd" id="1_14if3"]
+
+[node name="fraud" type="Node2D"]
+script = ExtResource("1_14if3")

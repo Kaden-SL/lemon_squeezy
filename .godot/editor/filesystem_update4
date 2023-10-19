@@ -1,32 +1,14 @@
-<<<<<<< Updated upstream
-res://02-Lust/GUI/heartmeter.tscn
-res://05-Wrath/Player/WrathPlayer.tscn
-res://02-Lust/Objects/Heart.tscn
-res://05-Wrath/Level/wrath.tscn
-res://00-All Levels/Player/Player.tscn
-res://01-Limbo/Level/level_0.tscn
-res://02-Lust/Level/level_2.tscn
-res://04-Greed/Level/greed.tscn
-res://02-Lust/Level/level_1.tscn
-=======
-res://07-Violence/Levels/first_battle.tscn
-res://01-Limbo/Level/level_0.tscn
-res://09-Treachery/treachery.tscn
-res://07-Violence/Levels/player state.gd
-res://07-Violence/Levels/first_battle.gd
-res://07-Violence/Levels/enemy_state.gd
-res://07-Violence/Dialogic/Violence, Prologue.dtl
 res://07-Violence/Levels/prologue.tscn
-res://07-Violence/Levels/prologue.gd
-res://07-Violence/Levels/second_battle.tscn
-res://07-Violence/Levels/second_battle.gd
-res://07-Violence/Levels/demon_state.gd
-res://07-Violence/Levels/human_state.gd
-res://08-Fraud/Dialogic Stuff/characters/MC.dch
-res://07-Violence/Dialogic/Violence, Epilogue.dtl
+res://05-Wrath/Level/wrath.gd
+res://07-Violence/Levels/first_battle.tscn
 res://07-Violence/Levels/intermission.tscn
-res://07-Violence/Levels/intermission.gd
+res://07-Violence/Levels/second_battle.tscn
 res://07-Violence/Levels/epilogue.tscn
-res://07-Violence/Levels/epilogue.gd
-res://07-Violence/Dialogic/Violence, Intermission.dtl
->>>>>>> Stashed changes
+res://05-Wrath/Level/wrath.tscn
+res://04-Greed/Level/greed.tscn
+res://08-Fraud/Level/fraud.tscn
+res://09-Treachery/Level/Credits.tscn
+res://05-Wrath/Player/WrathPlayer.tscn
+res://02-Lust/Level/level_2.tscn
+res://05-Wrath/Player/WrathPlayer.gd
+res://00-All Levels/Objects/Portal.gd

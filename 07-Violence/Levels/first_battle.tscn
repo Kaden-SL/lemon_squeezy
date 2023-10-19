@@ -9,21 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://b5g73h2p7v6un" path="res://07-Violence/Art Assets/violence_mc_NoWeapon.png" id="6_6x1uw"]
 [ext_resource type="Texture2D" uid="uid://ct068vlsisb34" path="res://07-Violence/Art Assets/pointer.png" id="6_wohps"]
 
-[sub_resource type="Animation" id="Animation_0q5pg"]
-resource_name = "hurt"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Fire Demon:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(30, 30, 30, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
-}
-
 [sub_resource type="Animation" id="Animation_7kxcv"]
 length = 0.001
 tracks/0/type = "value"
@@ -39,25 +24,25 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 1)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_4scmv"]
-_data = {
-"RESET": SubResource("Animation_7kxcv"),
-"hurt": SubResource("Animation_0q5pg")
-}
-
-[sub_resource type="Animation" id="Animation_3om7s"]
+[sub_resource type="Animation" id="Animation_0q5pg"]
 resource_name = "hurt"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("NW Damien:self_modulate")
+tracks/0/path = NodePath("Fire Demon:self_modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.171583, 0.2, 0.371583),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Color(30, 30, 30, 1), Color(1, 1, 1, 1), Color(30, 30, 30, 1), Color(1, 1, 1, 1)]
+"values": [Color(30, 30, 30, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4scmv"]
+_data = {
+"RESET": SubResource("Animation_7kxcv"),
+"hurt": SubResource("Animation_0q5pg")
 }
 
 [sub_resource type="Animation" id="Animation_dxaqm"]
@@ -73,6 +58,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_3om7s"]
+resource_name = "hurt"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NW Damien:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.171583, 0.2, 0.371583),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(30, 30, 30, 1), Color(1, 1, 1, 1), Color(30, 30, 30, 1), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_a6ao3"]
@@ -112,7 +112,6 @@ texture = ExtResource("4_dnyu6")
 expand_mode = 1
 
 [node name="Demon" type="VBoxContainer" parent="."]
-anchors_preset = -1
 offset_left = 300.0
 offset_top = 100.0
 offset_right = 512.0

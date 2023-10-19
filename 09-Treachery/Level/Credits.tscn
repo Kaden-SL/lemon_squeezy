@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bjorgnbcxdeir"]
+
+[node name="Credits" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1149.0
+offset_bottom = 647.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 1157.0
+offset_bottom = 631.0
+text = "Thank you for playing!
+Credits:
+Level Design: 
+Brandon Tanega
+Writing: 
+Brandon Christensen
+Jessica Jorgensen
+Art: 
+Ami Prajapati
+Ellen Brannon
+Elizabeth Liao
+Programming:
+Kaden Sedmak-Locke
+Music and Sound: 
+Youtube Royalty Free Music
+AIva.com"
+horizontal_alignment = 1
+vertical_alignment = 1
