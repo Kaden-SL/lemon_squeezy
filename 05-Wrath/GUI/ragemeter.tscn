@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bvxb2672pwxkk"]
+
+[node name="heartmeter" type="TextureProgressBar"]
+offset_left = 1110.0
+offset_top = 514.0
+offset_right = 1129.0
+offset_bottom = 577.0
+scale = Vector2(2.13676, 2.13676)
+fill_mode = 3

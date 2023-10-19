@@ -1,15 +1,13 @@
-<<<<<<< HEAD
+AudioStreamPlayer
+AudioStreamPlayer2D
 ParallaxBackground
-=======
 Panel
 Node
->>>>>>> 7e71e55b6023ff3f3d2a004ac863886797cef95c
 Label
 HBoxContainer
 MarginContainer
 Sprite2D
 ProgressBar
-AudioStreamPlayer2D
 TileMap
 AnimatedSprite2D
 CollisionShape2D

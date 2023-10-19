@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://cxm1kubfpivh1"]
+[gd_scene load_steps=15 format=3 uid="uid://cxm1kubfpivh1"]
 
 [ext_resource type="Script" path="res://05-Wrath/Player/WrathPlayer.gd" id="1_iepda"]
 [ext_resource type="Texture2D" uid="uid://d2hnomskx0wyw" path="res://00-All Levels/Art Assets/topdown_playersprite.png" id="2_bgbxr"]
+[ext_resource type="AudioStream" uid="uid://3fcft64uk866" path="res://05-Wrath/lower vol.mp3" id="3_pj5k6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y41p7"]
 size = Vector2(23, 31)
@@ -92,3 +93,6 @@ sprite_frames = SubResource("SpriteFrames_x6sg0")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(423, 228)
 zoom = Vector2(2, 2)
+
+[node name="CutsceneAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_pj5k6")
