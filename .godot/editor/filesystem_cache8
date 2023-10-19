@@ -1,5 +1,5 @@
 2a60927148abd1d33b818b535e306557
-::res://::1697684295
+::res://::1697685362
 icon.svg::CompressedTexture2D::3604967623761785578::1684971234::1697672961::1::::<><>::
 README.md::TextFile::-1::1697059626::0::1::::<><>::
 ::res://00-All Levels/::1697670090
@@ -82,19 +82,19 @@ tile013.png::CompressedTexture2D::4201511042696482100::1697328253::1697339331::1
 tile014.png::CompressedTexture2D::2194794508517077868::1697328253::1697339331::1::::<><>::
 tile015.png::CompressedTexture2D::8163536506302872573::1697328253::1697339331::1::::<><>::
 tile016.png::CompressedTexture2D::5489007551572116049::1697328253::1697339331::1::::<><>::
-::res://02-Lust/GUI/::1697684214
+::res://02-Lust/GUI/::1697685315
 gui.tscn::PackedScene::6733150312635531512::1697338486::0::1::::<><>::
-heartmeter.tscn::PackedScene::7044426777720669935::1697684214::0::1::::<><>::uid://bw7xf3po67nqf<>uid://ckg6fggy2moeb
+heartmeter.tscn::PackedScene::7044426777720669935::1697685315::0::1::::<><>::uid://bw7xf3po67nqf<>uid://ckg6fggy2moeb
 ::res://02-Lust/Level/::1697577182
 level_1.gd::GDScript::-1::1697337595::0::1::::<>Node2D<>::
 level_1.tscn::PackedScene::4809376463474503779::1697577182::0::1::::<><>::res://02-Lust/Level/level_1.gd<>uid://faeilsasv6ts<>uid://dx3qagqn03bra<>uid://chkxgyvemm7d2<>uid://bsaud43p0c8ow<>uid://l3oq5g7n0uvg<>uid://xg66dkypxfef<>uid://c7mmxd44grkpb
 level_2.gd::GDScript::-1::1697512190::0::1::::<>Node2D<>::
 level_2.tscn::PackedScene::1952392134939132925::1697577182::0::1::::<><>::res://02-Lust/Level/level_2.gd<>uid://dx3qagqn03bra<>uid://chkxgyvemm7d2<>uid://faeilsasv6ts<>uid://l3oq5g7n0uvg<>uid://bsaud43p0c8ow<>uid://xg66dkypxfef<>uid://c7mmxd44grkpb
-::res://02-Lust/Objects/::1697684214
+::res://02-Lust/Objects/::1697685315
 Fire.gd::GDScript::-1::1697338420::0::1::::<>Area2D<>::
 Fire.tscn::PackedScene::5286215549189667297::1697512165::0::1::::<><>::res://02-Lust/Objects/Fire.gd<>uid://di7tmbo7w6n0m
 Heart.gd::GDScript::-1::1697568634::0::1::::<>Area2D<>::
-Heart.tscn::PackedScene::1628667430715415369::1697684214::0::1::::<><>::res://02-Lust/Objects/Heart.gd<>uid://dc33of3ndrguy<>uid://be20jsnrvji78
+Heart.tscn::PackedScene::1628667430715415369::1697685315::0::1::::<><>::res://02-Lust/Objects/Heart.gd<>uid://dc33of3ndrguy<>uid://be20jsnrvji78
 ::res://02-Lust/Player/::1697512322
 TopDownPlayer.gd::GDScript::-1::1697337791::0::1::::<>CharacterBody2D<>::
 TopDownPlayer.tscn::PackedScene::830760054174881976::1697512322::0::1::::<><>::res://02-Lust/Player/TopDownPlayer.gd<>uid://d2hnomskx0wyw
@@ -122,29 +122,29 @@ Greed_timeline.dtl::Resource::-1::1697657441::0::1::::<><>::
 greed.gd::GDScript::-1::1697512026::0::1::::<>Node2D<>::
 greed.tscn::PackedScene::6242159150379253619::1697512165::0::1::::<><>::res://04-Greed/Level/greed.gd
 ::res://04-Greed/Player/::1697338706
-::res://05-Wrath/::1697684283
+::res://05-Wrath/::1697685362
 lower vol.mp3::AudioStreamMP3::1975740920767638961::1697487488::1697487507::1::::<><>::
 lower vol.wav::AudioStreamWAV::190369134152371542::1697487326::1697487326::1::::<><>::
-playersprite_rage.png::CompressedTexture2D::1627799463820266041::1697684283::1697684298::1::::<><>::
 WrathMenu.mp3::AudioStreamMP3::4085193583658220025::1697486772::1697486782::1::::<><>::
 WrathMusic.mp3::AudioStreamMP3::1003827566099182958::1697486378::1697486415::1::::<><>::
-wrathvial.png::CompressedTexture2D::3655175575191354791::1697684283::1697684298::1::::<><>::
-::res://05-Wrath/Art Assets/::1697568984
+::res://05-Wrath/Art Assets/::1697685362
 hellbeg.jpg::CompressedTexture2D::1257301795169371345::1697568977::1697568984::1::::<><>::
 MC_rage.png::CompressedTexture2D::3277844265314036694::1697516308::1697516308::1::::<><>::
+playersprite_rage.png::CompressedTexture2D::1627799463820266041::1697684283::1697685360::1::::<><>::
+wrathvial.png::CompressedTexture2D::3655175575191354791::1697684283::1697685362::1::::<><>::
 ::res://05-Wrath/GUI/::1697684214
 ragemeter.tscn::PackedScene::3907977700768643514::1697684214::0::1::::<><>::
-::res://05-Wrath/Level/::1697684214
+::res://05-Wrath/Level/::1697685315
 wrath.gd::GDScript::-1::1697569135::0::1::::<>Node2D<>::
-wrath.tscn::PackedScene::1365182736982637345::1697684214::0::1::::<><>::res://05-Wrath/Level/wrath.gd<>uid://faeilsasv6ts<>uid://cxm1kubfpivh1<>uid://oki5myliwaoc<>uid://c7mmxd44grkpb<>uid://r6btu4nj0ght<>uid://bsaud43p0c8ow
-::res://05-Wrath/Player/::1697684214
-WrathPlayer.gd::GDScript::-1::1697684214::0::1::::<>CharacterBody2D<>::
-WrathPlayer.tscn::PackedScene::6413554856120009708::1697684214::0::1::::<><>::res://05-Wrath/Player/WrathPlayer.gd<>uid://d2hnomskx0wyw<>uid://3fcft64uk866
+wrath.tscn::PackedScene::1365182736982637345::1697685315::0::1::::<><>::res://05-Wrath/Level/wrath.gd<>uid://faeilsasv6ts<>uid://cxm1kubfpivh1<>uid://oki5myliwaoc<>uid://c7mmxd44grkpb<>uid://r6btu4nj0ght<>uid://bsaud43p0c8ow
+::res://05-Wrath/Player/::1697685315
+WrathPlayer.gd::GDScript::-1::1697685310::0::1::::<>CharacterBody2D<>::
+WrathPlayer.tscn::PackedScene::6413554856120009708::1697685315::0::1::::<><>::res://05-Wrath/Player/WrathPlayer.gd<>uid://d2hnomskx0wyw<>uid://3fcft64uk866
 ::res://05-Wrath/Timeline/::1697681101
 wrath.dtl::Resource::-1::1697681101::0::1::::<><>::
 ::res://06-Heresy/::1697516308
 heresy.dtl::Resource::-1::1697516308::0::1::::<><>::
-::res://06-Heresy/Art Assets/::1697684283
+::res://06-Heresy/Art Assets/::1697684298
 heresydemon.png::CompressedTexture2D::4170265312761413269::1697684283::1697684298::1::::<><>::
 heresymc.png::CompressedTexture2D::1937271201888640269::1697684283::1697684298::1::::<><>::
 neg-pleasureTOpower.png::CompressedTexture2D::204114602568451839::1697684283::1697684298::1::::<><>::

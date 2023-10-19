@@ -3,3 +3,6 @@ res://05-Wrath/Level/wrath.tscn
 res://02-Lust/GUI/heartmeter.tscn
 res://02-Lust/Objects/Heart.tscn
 res://05-Wrath/Player/WrathPlayer.gd
+res://00-All Levels/Player/Player.tscn
+res://01-Limbo/Level/level_0.tscn
+res://00-All Levels/Player/Player.gd

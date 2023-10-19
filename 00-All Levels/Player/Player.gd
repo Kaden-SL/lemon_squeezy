@@ -14,6 +14,11 @@ var walk = 0
 
 func _physics_process(delta):
 	# Add the gravity.
+	var direction = Input.get_axis("right", "left")
+	if direction and is_on_floor():
+		$PlayerSprite.play("Walk")
+	elif is_on_floor():
+		$PlayerSprite.play("Still")
 	if not is_on_floor():
 		velocity.y += GRAVITY * delta
 		
@@ -29,7 +34,7 @@ func _physics_process(delta):
 		jump_cut()
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction = Input.get_axis("left", "right")
+	
 	
 	if direction > 0 or direction < 0:
 		$PlayerSprite.scale.x = direction

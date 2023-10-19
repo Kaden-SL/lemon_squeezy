@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xgrvb7ysnuc4"
-path="res://.godot/imported/playersprite_rage.png-a17bee13f1ebc9ddadc3aff58cd9ca36.ctex"
+path="res://.godot/imported/playersprite_rage.png-f6e318a3fada281c35b109ac6a1a32ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://05-Wrath/playersprite_rage.png"
-dest_files=["res://.godot/imported/playersprite_rage.png-a17bee13f1ebc9ddadc3aff58cd9ca36.ctex"]
+source_file="res://05-Wrath/Art Assets/playersprite_rage.png"
+dest_files=["res://.godot/imported/playersprite_rage.png-f6e318a3fada281c35b109ac6a1a32ed.ctex"]
 
 [params]
 
